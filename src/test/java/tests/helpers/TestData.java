@@ -1,6 +1,7 @@
 package tests.helpers;
 
 import org.testng.annotations.DataProvider;
+import pages.HomePage;
 import utils.runner.ProjectProperties;
 
 public final class TestData {
@@ -16,14 +17,25 @@ public final class TestData {
     public static final String TITLE = "STORE";
 
     @DataProvider
-    public static Object[][] menuItems() {
+    public static Object[][] menuItemsLoggedIn() {
         return new Object[][]{
                 {"Home", HOME_END_POINT},
                 {"Contact", CONTACT},
                 {"About us", ABOUT_US},
                 {"Cart", CART},
-                {"Log in", LOGIN},
-                {"Sign up", SIGN_UP}
+                {"Log out", LOG_OUT},
+        };
+    }
+
+    @DataProvider
+    public static Object[][] menuItemsLoggedOut() {
+        return new Object[][]{
+                {"Home", HOME_END_POINT},
+                {"Contact", HOME_END_POINT},
+                {"About us", HOME_END_POINT},
+                {"Cart", CART},
+                {"Log in", HOME_END_POINT},
+                {"Sign up", HOME_END_POINT}
         };
     }
 }

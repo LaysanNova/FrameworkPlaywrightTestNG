@@ -2,6 +2,10 @@ package utils.runner;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import utils.reports.ReportUtils;
+
+import java.lang.reflect.Method;
+
 import static utils.reports.LoggerUtils.logInfo;
 
 public class LoginUtils {
@@ -15,7 +19,14 @@ public class LoginUtils {
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();
 
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sing out")).isVisible();
-        logInfo("Page context: Base URL opened.");
+        logInfo("Login context: Login successful." + ReportUtils.getEndLine());
+
+    }
+
+    public static void logout(Page page) {
+
+        page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Log out")).click();
+        logInfo("Login context: Logout successful." + ReportUtils.getEndLine());
     }
 
     public static String getUserToken() {

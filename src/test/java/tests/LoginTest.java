@@ -1,4 +1,4 @@
-package tests.Login;
+package tests;
 
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
@@ -9,19 +9,24 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginModal;
+import tests.helpers.LoginData;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-import static org.testng.Assert.assertEquals;
 
-public class LoginTest extends BaseLoginTest {
+public class LoginTest extends BaseTest {
 
-    @Test(dataProvider = "loginParameters", dataProviderClass = LoginData.class)
+    @Test(
+            testName = "TC.XXX.XX: Verify Login Functionality",
+            dataProvider = "loginParameters", dataProviderClass = LoginData.class,
+            groups = "login"
+    )
     @Description("Test Login Functionality: Including valid and invalid credentials")
     @Parameters({"menuName", "expectedEndPoint"})
     @Severity(SeverityLevel.CRITICAL)
     public void testLogin(boolean successful, String userName, String password, String message) {
 
-        HomePage homePage = new HomePage(getPage());
+        HomePage homePage = new HomePage(getPage())
+                .clickLogOut();
 
         final LoginModal loginModal = homePage.clickLoginMenu();
         final Locator form = loginModal.getDialog();
@@ -50,8 +55,11 @@ public class LoginTest extends BaseLoginTest {
         }
     }
 
-    @Test()
-    @Description("Test Login Functionality: API test")
+    @Test(
+            testName = "TC.XXX.XX: Verify Login Functionality with API",
+            groups = "login")
+    @Description("Test Login Functionality: To ensure that the login functionality of the " +
+            "application's API works correctly,allowing users to authenticate successfully.")
     @Severity(SeverityLevel.CRITICAL)
     public void testLoginAPI() {
 

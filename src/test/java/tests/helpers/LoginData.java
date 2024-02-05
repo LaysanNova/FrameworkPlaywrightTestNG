@@ -1,4 +1,4 @@
-package tests.Login;
+package tests.helpers;
 
 import org.testng.annotations.DataProvider;
 import utils.runner.ProjectProperties;
