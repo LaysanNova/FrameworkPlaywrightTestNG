@@ -5,6 +5,7 @@ import io.qameta.allure.Allure;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import tests.helpers.TestData;
 import utils.reports.ReportUtils;
 import utils.reports.TracingUtils;
 import utils.runner.BrowserManager;
@@ -17,7 +18,7 @@ import java.lang.reflect.Method;
 import static utils.reports.LoggerInfo.getBrowserInfo;
 import static utils.reports.LoggerUtils.*;
 
-abstract class BaseTest {
+public abstract class BaseTest {
 
     private final Playwright playwright = Playwright.create();
     private final Browser browser = BrowserManager.createBrowser(playwright);
@@ -26,6 +27,8 @@ abstract class BaseTest {
 
     @BeforeSuite
     void launchBrowser() {
+
+        logInfo(ReportUtils.getReportHeader());
 
         if (playwright != null){
             logInfo("Playwright created.");
@@ -45,6 +48,7 @@ abstract class BaseTest {
 
     @BeforeMethod
     void createContextAndPage(Method method) {
+        System.out.println(this.getClass());
 
         logInfo("RUN " + ReportUtils.getTestMethodName(method));
 
@@ -62,8 +66,19 @@ abstract class BaseTest {
         Allure.step("User has navigated to the Home page.");
         logInfo("Testing....");
 
+        if(isOnHomePage()) {
+            getPage().onLoad(p -> page.content());
+            if (!page.content().isEmpty()) {
+                logInfo("Open Home page");
+                Allure.step("User has navigated to the Home page.");
+            }
+            logInfo("Testing....");
+        } else {
+            logError("HomePage is NOT opened");
+        }
+
+        //????
         LoginUtils.login(page);
-        Allure.step("User logged in.");
     }
 
     @AfterMethod
@@ -98,6 +113,16 @@ abstract class BaseTest {
             playwright.close();
             logInfo("Playwright closed.");
         }
+    }
+
+    protected  boolean isOnHomePage() {
+        String pageUrl = ProjectProperties.BASE_URL + TestData._END_POINT;
+
+        if (!getPage().url().equals(pageUrl) || getPage().content().isEmpty()) {
+            getPage().waitForTimeout(3000);
+        }
+
+        return !getPage().content().isEmpty();
     }
 
     Page getPage() {

@@ -12,9 +12,8 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public class HomeTest extends BaseTest{
 
-    @Test
-    @Description("Objective: To verify the user's ability to submit payment after entering valid credit card information."
-            + " and verify that the new course is shown in the Your Courses list on the Profile page.")
+    @Test(testName = "TC.XXX.XX: Verify Logout Functionality")
+    @Description("Objective: To ensure that the logout feature functions correctly and securely terminates the user session.")
     @Severity(SeverityLevel.CRITICAL)
     public void testLogOut() {
 
