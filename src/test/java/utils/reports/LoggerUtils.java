@@ -9,7 +9,7 @@ public class LoggerUtils {
     private static final String SUCCESS = "✅\n";
     private static final String WARNING = "⚠️";
     private static final String EXCEPTION = "❗";
-    private static final Logger logger = LogManager.getLogger("BaseTest");
+    private static final Logger logger = LogManager.getLogger("LoginBaseTest");
 
     public static void logInfo(String message) { logger.info(message); }
 

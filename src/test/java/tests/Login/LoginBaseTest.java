@@ -1,15 +1,19 @@
-package tests;
+package tests.Login;
 
-import com.microsoft.playwright.*;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 import io.qameta.allure.Allure;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import tests.helpers.TestData;
 import utils.reports.ReportUtils;
 import utils.reports.TracingUtils;
 import utils.runner.BrowserManager;
-import utils.runner.LoginUtils;
 import utils.runner.ProjectProperties;
 
 import java.io.IOException;
@@ -18,12 +22,12 @@ import java.lang.reflect.Method;
 import static utils.reports.LoggerInfo.getBrowserInfo;
 import static utils.reports.LoggerUtils.*;
 
-public abstract class BaseTest {
+public abstract class LoginBaseTest {
 
-    private final Playwright playwright = Playwright.create();
-    private final Browser browser = BrowserManager.createBrowser(playwright);
-    private BrowserContext context;
-    private Page page;
+    final Playwright playwright = Playwright.create();
+    final Browser browser = BrowserManager.createBrowser(playwright);
+    BrowserContext context;
+    Page page;
 
     @BeforeSuite
     void launchBrowser() {
@@ -76,9 +80,6 @@ public abstract class BaseTest {
         } else {
             logError("HomePage is NOT opened");
         }
-
-        //????
-        LoginUtils.login(page);
     }
 
     @AfterMethod
@@ -125,7 +126,7 @@ public abstract class BaseTest {
         return !getPage().content().isEmpty();
     }
 
-    protected Page getPage() {
+    Page getPage() {
         return page;
     }
 }
