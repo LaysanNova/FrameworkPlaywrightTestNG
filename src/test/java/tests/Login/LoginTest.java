@@ -1,4 +1,4 @@
-package tests;
+package tests.Login;
 
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
@@ -9,11 +9,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginModal;
-import tests.helpers.LoginData;
+import tests.BaseTest;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends LoginBaseTest {
 
     @Test(
             testName = "TC.XXX.XX: Verify Login Functionality",
@@ -25,8 +25,7 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testLogin(boolean successful, String userName, String password, String message) {
 
-        HomePage homePage = new HomePage(getPage())
-                .clickLogOut();
+        HomePage homePage = new HomePage(getPage());
 
         final LoginModal loginModal = homePage.clickLoginMenu();
         final Locator form = loginModal.getDialog();
