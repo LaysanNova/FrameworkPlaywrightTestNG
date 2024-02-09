@@ -57,7 +57,7 @@ public final class NavigationTest extends BaseTest {
 
         Locator menuButton = getPage().getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(menuName));
 
-        getPage().waitForTimeout(2000);
+        getPage().waitForLoadState();
         assertThat(menuButton).isVisible();
 
         menuButton.click();

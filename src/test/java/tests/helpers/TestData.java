@@ -15,6 +15,14 @@ public final class TestData {
     public static final String LOG_OUT = HOME_END_POINT;
     public static final String SIGN_UP = "/";
     public static final String TITLE = "STORE";
+    public static final String TITLE_CONTACT = "New message";
+    public static final String TITLE_ABOUT_US = "About us";
+    public static final String TITLE_LOGIN = "Log in";
+    public static final String TITLE_SIGNUP = "Sign up";
+
+    public static final String[] contactModalHeader = {"New message", "×"};
+    public static final String[] contactModalBody = {"Contact Email:", "Contact Name:", "Message:"};
+    public static final String[] contactModalFooter = {"Close", "Send message"};
 
     @DataProvider
     public static Object[][] menuItemsLoggedIn() {
@@ -24,8 +32,7 @@ public final class TestData {
                 {"About us", ABOUT_US},
                 {"Cart", CART},
                 {"Log out", LOG_OUT},
-        };
-    }
+        };    }
 
     @DataProvider
     public static Object[][] menuItemsLoggedOut() {
@@ -36,6 +43,15 @@ public final class TestData {
                 {"Cart", CART},
                 {"Log in", HOME_END_POINT},
                 {"Sign up", HOME_END_POINT}
+        };
+    }
+    @DataProvider
+    public static Object[][] modalTitle() {
+        return new Object[][]{
+                {"Contact", TITLE_CONTACT},
+                {"About us", TITLE_ABOUT_US},
+                {"Log in", TITLE_LOGIN},
+                {"Sign up", TITLE_SIGNUP}
         };
     }
 }

@@ -10,19 +10,35 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public abstract class FormPage<TPage> extends BaseLocator<TPage> {
 
-    private final Locator closeButton = image("PRODUCT STORE");
+    private final Locator modalTitle = locator("h5#exampleModalLabel");
+    private final Locator modalHeader = locator("div.modal-header");
+    private final Locator modalBody = locator("div.modal-body");
+    private final Locator modalFooter = locator("div.modal-footer");
     private final Locator dialog = dialog();
 
     protected FormPage(Page page) {
+
         super(page);
     }
 
-    public Locator getCloseButton() {
+    public Locator getModalTitle() {
 
-        Allure.step("Assertion: 'Close BTN on Form' is visible.");
-        assertThat(closeButton).isVisible();
+        return modalTitle;
+    }
 
-        return closeButton;
+    public Locator getModalHeader() {
+
+        return modalHeader;
+    }
+
+    public Locator getModalBody() {
+
+        return modalBody;
+    }
+
+    public Locator getModalFooter() {
+
+        return modalFooter;
     }
 
     public Locator getDialog() {

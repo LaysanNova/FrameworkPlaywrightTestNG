@@ -75,6 +75,7 @@ abstract class BaseMenu<TPage> extends BaseLocator<TPage> {
     @Step("Click menu 'Contact'.")
     public ContactModal clickContactMenu() {
         contactItem.click();
+        getPage().waitForLoadState();
 
         return new ContactModal(getPage());
     }
