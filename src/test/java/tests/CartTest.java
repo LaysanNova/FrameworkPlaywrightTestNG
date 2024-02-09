@@ -16,7 +16,6 @@ public class CartTest extends BaseTest {
                 .clickAddToCartButton()
                 .clickOk();
 
-
 //        getPage().waitForTimeout(10000);
 
 
