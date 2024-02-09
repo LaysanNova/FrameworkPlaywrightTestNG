@@ -8,7 +8,7 @@ import jdk.jfr.Description;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import tests.helpers.TestData;
-import utils.runner.LoginUtils;
+import tests.Login.LoginUtils;
 import utils.runner.ProjectProperties;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;

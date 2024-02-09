@@ -35,7 +35,6 @@ public class BrowserManager {
             }
         }
     }
-
     public static BrowserContext createContext(Browser browser) {
         return browser.newContext(new Browser.NewContextOptions()
                 .setViewportSize(ProjectProperties.SCREEN_SIZE_WIDTH, ProjectProperties.SCREEN_SIZE_HEIGHT)

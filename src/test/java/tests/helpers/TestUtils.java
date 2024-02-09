@@ -9,4 +9,9 @@ public class TestUtils {
         return locator.innerText().split("\n");
 
     }
+
+    public static void waiter(String css) {
+
+
+    }
 }

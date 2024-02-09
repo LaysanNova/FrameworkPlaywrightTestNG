@@ -4,7 +4,6 @@ import org.testng.annotations.DataProvider;
 import utils.runner.ProjectProperties;
 
 public class LoginData {
-
     @DataProvider
     public static Object[][] loginParameters() {
         return new Object[][]{
