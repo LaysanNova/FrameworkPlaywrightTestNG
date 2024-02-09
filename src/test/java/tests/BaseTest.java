@@ -9,7 +9,7 @@ import tests.helpers.TestData;
 import utils.reports.ReportUtils;
 import utils.reports.TracingUtils;
 import utils.runner.BrowserManager;
-import utils.runner.LoginUtils;
+import tests.Login.LoginUtils;
 import utils.runner.ProjectProperties;
 
 import java.io.IOException;
@@ -63,8 +63,11 @@ public abstract class BaseTest {
 
         page.navigate(ProjectProperties.BASE_URL);
         logInfo("Open Home page");
+
         Allure.step("User has navigated to the Home page.");
         logInfo("Testing....");
+
+        LoginUtils.login(page);
 
         if(isOnHomePage()) {
             getPage().onLoad(p -> page.content());
@@ -76,9 +79,6 @@ public abstract class BaseTest {
         } else {
             logError("HomePage is NOT opened");
         }
-
-        //????
-        LoginUtils.login(page);
     }
 
     @AfterMethod

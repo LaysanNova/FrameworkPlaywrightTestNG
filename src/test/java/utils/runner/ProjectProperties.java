@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public final class ProjectProperties {
-
     private static final String ENV_WEB_OPTIONS = "WEB_OPTIONS";
     private static final String ENV_BROWSER_OPTIONS = "BROWSER_OPTIONS";
     private static Properties properties = init_properties();

@@ -1,8 +1,9 @@
-package utils.runner;
+package tests.Login;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import utils.reports.ReportUtils;
+import utils.runner.ProjectProperties;
 
 import java.lang.reflect.Method;
 
@@ -19,6 +20,9 @@ public class LoginUtils {
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in")).click();
 
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Sing out")).isVisible();
+
+        page.waitForLoadState();
+        page.waitForSelector("#logout2");
         logInfo("Login context: Login successful." + ReportUtils.getEndLine());
 
     }
