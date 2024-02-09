@@ -5937,3 +5937,639 @@ tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 
 2024-02-08 21:46:41.778 INFO  LoginBaseTest - Context closed.
 2024-02-08 21:46:41.906 INFO  LoginBaseTest - Browser closed.
 2024-02-08 21:46:41.916 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:52:56.250 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:52:56.271 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:52PM
+==========================================================================================
+
+2024-02-08 21:52:56.271 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:52:56.271 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3f2049b6 launched.
+
+2024-02-08 21:52:56.293 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:52:56.306 INFO  LoginBaseTest - Context created.
+2024-02-08 21:52:56.310 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:52:56.444 INFO  LoginBaseTest - Page created.
+2024-02-08 21:52:56.973 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:52:56.975 INFO  LoginBaseTest - Testing....
+2024-02-08 21:52:56.990 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:52:56.990 INFO  LoginBaseTest - Testing....
+2024-02-08 21:52:57.601 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:52:58.894 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 235 ms
+
+2024-02-08 21:52:58.901 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:52:58.979 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:52:58.986 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:52:59.179 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:52:59.190 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:53:07.686 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:53:07.707 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:53PM
+==========================================================================================
+
+2024-02-08 21:53:07.707 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:53:07.708 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@1e392345 launched.
+
+2024-02-08 21:53:07.727 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:53:07.741 INFO  LoginBaseTest - Context created.
+2024-02-08 21:53:07.746 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:53:07.891 INFO  LoginBaseTest - Page created.
+2024-02-08 21:53:08.298 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:53:08.300 INFO  LoginBaseTest - Testing....
+2024-02-08 21:53:08.322 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:53:08.323 INFO  LoginBaseTest - Testing....
+2024-02-08 21:53:08.974 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:53:10.246 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 215 ms
+
+2024-02-08 21:53:10.254 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:53:10.335 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:53:10.341 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:53:10.529 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:53:10.539 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:53:20.436 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:53:20.457 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:53PM
+==========================================================================================
+
+2024-02-08 21:53:20.457 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:53:20.458 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@2fa7ae9 launched.
+
+2024-02-08 21:53:20.477 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:53:20.489 INFO  LoginBaseTest - Context created.
+2024-02-08 21:53:20.493 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:53:20.630 INFO  LoginBaseTest - Page created.
+2024-02-08 21:53:22.623 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:53:22.625 INFO  LoginBaseTest - Testing....
+2024-02-08 21:53:22.639 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:53:22.639 INFO  LoginBaseTest - Testing....
+2024-02-08 21:53:28.862 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:54:02.016 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 33 sec 108 ms
+
+2024-02-08 21:54:02.029 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:54:02.030 INFO  LoginBaseTest - Tracing saved
+2024-02-08 21:54:02.281 INFO  LoginBaseTest - Video saved
+2024-02-08 21:54:03.590 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:54:03.596 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:54:03.738 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:54:03.748 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:54:32.489 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:54:32.510 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:54PM
+==========================================================================================
+
+2024-02-08 21:54:32.510 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:54:32.511 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3fabf088 launched.
+
+2024-02-08 21:54:32.531 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:54:32.545 INFO  LoginBaseTest - Context created.
+2024-02-08 21:54:32.550 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:54:32.674 INFO  LoginBaseTest - Page created.
+2024-02-08 21:54:34.495 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:54:34.496 INFO  LoginBaseTest - Testing....
+2024-02-08 21:54:34.510 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:54:34.511 INFO  LoginBaseTest - Testing....
+2024-02-08 21:54:40.730 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:55:13.901 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 33 sec 126 ms
+
+2024-02-08 21:55:13.908 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:55:13.909 INFO  LoginBaseTest - Tracing saved
+2024-02-08 21:55:14.384 INFO  LoginBaseTest - Video saved
+2024-02-08 21:55:15.758 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:55:15.762 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:55:15.900 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:55:15.910 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:57:15.821 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:57:15.844 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:57PM
+==========================================================================================
+
+2024-02-08 21:57:15.844 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:57:15.844 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3f2049b6 launched.
+
+2024-02-08 21:57:15.867 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:57:15.880 INFO  LoginBaseTest - Context created.
+2024-02-08 21:57:15.885 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:57:16.020 INFO  LoginBaseTest - Page created.
+2024-02-08 21:57:18.013 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:57:18.014 INFO  LoginBaseTest - Testing....
+2024-02-08 21:57:18.030 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:57:18.030 INFO  LoginBaseTest - Testing....
+2024-02-08 21:57:24.258 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:57:29.046 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 4 sec 744 ms
+
+2024-02-08 21:57:29.053 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:57:29.349 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:57:29.354 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:57:29.519 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:57:29.535 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:57:38.033 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:57:38.052 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:57PM
+==========================================================================================
+
+2024-02-08 21:57:38.052 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:57:38.053 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@e72dba7 launched.
+
+2024-02-08 21:57:38.073 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:57:38.086 INFO  LoginBaseTest - Context created.
+2024-02-08 21:57:38.091 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:57:38.225 INFO  LoginBaseTest - Page created.
+2024-02-08 21:57:40.180 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:57:40.182 INFO  LoginBaseTest - Testing....
+2024-02-08 21:57:40.197 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:57:40.197 INFO  LoginBaseTest - Testing....
+2024-02-08 21:57:46.409 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:58:19.571 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 33 sec 113 ms
+
+2024-02-08 21:58:19.582 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:58:19.583 INFO  LoginBaseTest - Tracing saved
+2024-02-08 21:58:19.813 INFO  LoginBaseTest - Video saved
+2024-02-08 21:58:20.903 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:58:20.908 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:58:21.042 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:58:21.051 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:58:32.870 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:58:32.892 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:58PM
+==========================================================================================
+
+2024-02-08 21:58:32.892 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:58:32.892 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@2fa7ae9 launched.
+
+2024-02-08 21:58:32.913 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:58:32.927 INFO  LoginBaseTest - Context created.
+2024-02-08 21:58:32.932 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:58:33.072 INFO  LoginBaseTest - Page created.
+2024-02-08 21:58:35.028 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:58:35.029 INFO  LoginBaseTest - Testing....
+2024-02-08 21:58:35.045 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:58:35.045 INFO  LoginBaseTest - Testing....
+2024-02-08 21:58:41.266 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 21:59:12.941 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 31 sec 624 ms
+
+2024-02-08 21:59:12.948 INFO  LoginBaseTest - Page closed.
+2024-02-08 21:59:12.949 INFO  LoginBaseTest - Tracing saved
+2024-02-08 21:59:13.224 INFO  LoginBaseTest - Video saved
+2024-02-08 21:59:14.447 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 21:59:14.452 INFO  LoginBaseTest - Context closed.
+2024-02-08 21:59:14.588 INFO  LoginBaseTest - Browser closed.
+2024-02-08 21:59:14.597 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 21:59:50.425 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 21:59:50.446 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 09:59PM
+==========================================================================================
+
+2024-02-08 21:59:50.446 INFO  LoginBaseTest - Playwright created.
+2024-02-08 21:59:50.447 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3704122f launched.
+
+2024-02-08 21:59:50.467 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 21:59:50.481 INFO  LoginBaseTest - Context created.
+2024-02-08 21:59:50.485 INFO  LoginBaseTest - Tracing started
+2024-02-08 21:59:50.613 INFO  LoginBaseTest - Page created.
+2024-02-08 21:59:52.432 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:59:52.433 INFO  LoginBaseTest - Testing....
+2024-02-08 21:59:52.447 INFO  LoginBaseTest - Open Home page
+2024-02-08 21:59:52.448 INFO  LoginBaseTest - Testing....
+2024-02-08 21:59:58.664 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:00:03.465 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 4 sec 762 ms
+
+2024-02-08 22:00:03.470 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:00:03.753 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:00:03.759 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:00:03.903 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:00:03.912 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:00:46.314 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:00:46.334 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:00PM
+==========================================================================================
+
+2024-02-08 22:00:46.334 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:00:46.335 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@60afd40d launched.
+
+2024-02-08 22:00:46.355 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:00:46.369 INFO  LoginBaseTest - Context created.
+2024-02-08 22:00:46.373 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:00:46.526 INFO  LoginBaseTest - Page created.
+2024-02-08 22:00:48.493 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:00:48.494 INFO  LoginBaseTest - Testing....
+2024-02-08 22:00:48.508 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:00:48.508 INFO  LoginBaseTest - Testing....
+2024-02-08 22:00:54.727 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:01:26.373 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 31 sec 603 ms
+
+2024-02-08 22:01:26.379 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:01:26.380 INFO  LoginBaseTest - Tracing saved
+2024-02-08 22:01:26.640 INFO  LoginBaseTest - Video saved
+2024-02-08 22:01:27.784 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:01:27.789 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:01:27.925 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:01:27.934 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:05:57.400 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:05:57.421 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:05PM
+==========================================================================================
+
+2024-02-08 22:05:57.422 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:05:57.422 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3153ddfc launched.
+
+2024-02-08 22:05:57.442 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:05:57.455 INFO  LoginBaseTest - Context created.
+2024-02-08 22:05:57.459 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:05:57.601 INFO  LoginBaseTest - Page created.
+2024-02-08 22:05:59.636 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:05:59.638 INFO  LoginBaseTest - Testing....
+2024-02-08 22:05:59.653 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:05:59.653 INFO  LoginBaseTest - Testing....
+2024-02-08 22:06:05.884 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:06:10.702 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 4 sec 780 ms
+
+2024-02-08 22:06:10.709 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:06:11.021 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:06:11.026 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:06:11.174 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:06:11.186 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:06:19.985 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:06:20.006 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:06PM
+==========================================================================================
+
+2024-02-08 22:06:20.007 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:06:20.007 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3c321bdb launched.
+
+2024-02-08 22:06:20.027 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:06:20.040 INFO  LoginBaseTest - Context created.
+2024-02-08 22:06:20.045 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:06:20.189 INFO  LoginBaseTest - Page created.
+2024-02-08 22:06:22.030 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:06:22.032 INFO  LoginBaseTest - Testing....
+2024-02-08 22:06:22.047 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:06:22.047 INFO  LoginBaseTest - Testing....
+2024-02-08 22:06:28.281 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:06:59.921 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 31 sec 598 ms
+
+2024-02-08 22:06:59.928 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:06:59.929 INFO  LoginBaseTest - Tracing saved
+2024-02-08 22:07:00.262 INFO  LoginBaseTest - Video saved
+2024-02-08 22:07:01.433 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:07:01.437 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:07:01.577 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:07:01.586 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:09:24.078 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:09:24.102 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:09PM
+==========================================================================================
+
+2024-02-08 22:09:24.102 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:09:24.103 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@214894fc launched.
+
+2024-02-08 22:09:24.125 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:09:24.137 INFO  LoginBaseTest - Context created.
+2024-02-08 22:09:24.141 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:09:24.279 INFO  LoginBaseTest - Page created.
+2024-02-08 22:09:26.329 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:09:26.331 INFO  LoginBaseTest - Testing....
+2024-02-08 22:09:26.345 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:09:26.345 INFO  LoginBaseTest - Testing....
+2024-02-08 22:09:32.579 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:10:13.587 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 40 sec 960 ms
+
+2024-02-08 22:10:13.592 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:10:13.594 INFO  LoginBaseTest - Tracing saved
+2024-02-08 22:10:13.729 INFO  LoginBaseTest - Video saved
+2024-02-08 22:10:14.965 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:10:14.971 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:10:15.115 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:10:15.125 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:11:26.360 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:11:26.380 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:11PM
+==========================================================================================
+
+2024-02-08 22:11:26.380 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:11:26.380 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@ea27e34 launched.
+
+2024-02-08 22:11:26.403 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:11:26.414 INFO  LoginBaseTest - Context created.
+2024-02-08 22:11:26.419 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:11:26.552 INFO  LoginBaseTest - Page created.
+2024-02-08 22:11:27.007 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:27.008 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:27.019 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:27.020 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:27.622 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:11:28.304 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 626 ms
+
+2024-02-08 22:11:28.313 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:11:28.361 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:11:28.367 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:11:28.578 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:11:28.589 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:11:38.135 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:11:38.156 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:11PM
+==========================================================================================
+
+2024-02-08 22:11:38.156 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:11:38.156 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@60afd40d launched.
+
+2024-02-08 22:11:38.178 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:11:38.191 INFO  LoginBaseTest - Context created.
+2024-02-08 22:11:38.195 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:11:38.346 INFO  LoginBaseTest - Page created.
+2024-02-08 22:11:38.826 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:38.828 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:38.847 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:38.847 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:39.444 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:11:40.131 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 627 ms
+
+2024-02-08 22:11:40.136 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:11:40.205 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:11:40.210 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:11:40.367 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:11:40.378 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:11:51.488 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:11:51.509 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:11PM
+==========================================================================================
+
+2024-02-08 22:11:51.509 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:11:51.509 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@3f2049b6 launched.
+
+2024-02-08 22:11:51.529 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:11:51.543 INFO  LoginBaseTest - Context created.
+2024-02-08 22:11:51.548 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:11:51.682 INFO  LoginBaseTest - Page created.
+2024-02-08 22:11:52.148 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:52.150 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:52.192 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:11:52.193 INFO  LoginBaseTest - Testing....
+2024-02-08 22:11:52.812 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:11:53.437 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 564 ms
+
+2024-02-08 22:11:53.444 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:11:53.509 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:11:53.514 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:11:53.678 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:11:53.688 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:12:02.881 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:12:02.902 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:12PM
+==========================================================================================
+
+2024-02-08 22:12:02.902 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:12:02.903 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@10b3df93 launched.
+
+2024-02-08 22:12:02.923 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:12:02.937 INFO  LoginBaseTest - Context created.
+2024-02-08 22:12:02.943 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:12:03.082 INFO  LoginBaseTest - Page created.
+2024-02-08 22:12:03.475 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:03.479 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:03.499 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:03.499 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:04.124 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:12:04.268 ERROR LoginBaseTest - ❌
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   FAIL	 Run Time: 0 min 0 sec 70 ms
+
+2024-02-08 22:12:04.294 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:12:04.295 INFO  LoginBaseTest - Tracing saved
+2024-02-08 22:12:04.330 INFO  LoginBaseTest - Video saved
+2024-02-08 22:12:04.879 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:12:04.883 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:12:05.086 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:12:05.098 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:12:16.904 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:12:16.924 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:12PM
+==========================================================================================
+
+2024-02-08 22:12:16.924 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:12:16.924 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@6b85300e launched.
+
+2024-02-08 22:12:16.946 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:12:16.958 INFO  LoginBaseTest - Context created.
+2024-02-08 22:12:16.963 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:12:17.097 INFO  LoginBaseTest - Page created.
+2024-02-08 22:12:17.493 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:17.494 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:17.514 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:17.514 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:18.124 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:12:18.725 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 542 ms
+
+2024-02-08 22:12:18.732 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:12:18.780 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:12:18.786 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:12:18.953 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:12:18.963 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:12:27.421 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:12:27.441 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:12PM
+==========================================================================================
+
+2024-02-08 22:12:27.442 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:12:27.442 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@2fa7ae9 launched.
+
+2024-02-08 22:12:27.461 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:12:27.475 INFO  LoginBaseTest - Context created.
+2024-02-08 22:12:27.479 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:12:27.607 INFO  LoginBaseTest - Page created.
+2024-02-08 22:12:27.979 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:27.981 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:27.996 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:27.996 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:28.611 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:12:29.256 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 590 ms
+
+2024-02-08 22:12:29.263 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:12:29.313 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:12:29.319 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:12:29.503 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:12:29.513 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:12:37.754 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:12:37.773 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:12PM
+==========================================================================================
+
+2024-02-08 22:12:37.773 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:12:37.774 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@33a2499c launched.
+
+2024-02-08 22:12:37.794 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:12:37.808 INFO  LoginBaseTest - Context created.
+2024-02-08 22:12:37.812 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:12:37.944 INFO  LoginBaseTest - Page created.
+2024-02-08 22:12:38.290 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:38.291 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:38.305 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:38.305 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:38.945 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:12:39.787 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 784 ms
+
+2024-02-08 22:12:39.793 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:12:39.867 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:12:39.872 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:12:40.030 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:12:40.040 INFO  LoginBaseTest - Playwright closed.
+2024-02-08 22:12:48.128 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-08 22:12:48.148 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-08, 10:12PM
+==========================================================================================
+
+2024-02-08 22:12:48.148 INFO  LoginBaseTest - Playwright created.
+2024-02-08 22:12:48.148 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@ea27e34 launched.
+
+2024-02-08 22:12:48.166 INFO  LoginBaseTest - RUN tests.CartTest.testPurchaseWithCartValidationE2E
+2024-02-08 22:12:48.180 INFO  LoginBaseTest - Context created.
+2024-02-08 22:12:48.184 INFO  LoginBaseTest - Tracing started
+2024-02-08 22:12:48.309 INFO  LoginBaseTest - Page created.
+2024-02-08 22:12:48.645 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:48.647 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:48.662 INFO  LoginBaseTest - Open Home page
+2024-02-08 22:12:48.662 INFO  LoginBaseTest - Testing....
+2024-02-08 22:12:49.305 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-08 22:12:50.125 INFO  LoginBaseTest - ✅
+
+tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 0 sec 754 ms
+
+2024-02-08 22:12:50.134 INFO  LoginBaseTest - Page closed.
+2024-02-08 22:12:50.200 INFO  LoginBaseTest - Tracing stopped
+2024-02-08 22:12:50.205 INFO  LoginBaseTest - Context closed.
+2024-02-08 22:12:50.402 INFO  LoginBaseTest - Browser closed.
+2024-02-08 22:12:50.412 INFO  LoginBaseTest - Playwright closed.

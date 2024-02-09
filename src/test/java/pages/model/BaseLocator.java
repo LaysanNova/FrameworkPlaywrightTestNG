@@ -100,4 +100,21 @@ abstract class BaseLocator<TPage> {
 
         return getPage().locator(css);
     }
+
+
+    private List<Locator> getList(Locator locator) {
+        while (!locator.first().isVisible() && !locator.last().isVisible()) {
+            locator.first().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+            locator.last().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.ATTACHED));
+            locator.last().scrollIntoViewIfNeeded();
+            locator.last().focus();
+        }
+
+        return locator.all();
+    }
+
+    protected List<Locator> allProducts(String css) {
+
+        return getList(locator(css));
+    }
 }
