@@ -8,55 +8,45 @@ import pages.model.Footer;
 import java.util.List;
 
 public class HomePage extends Footer<HomePage> implements IRandom{
+
+    private final  List<Locator> allCategories = locator("#itemc").all();
+    private final Locator randomCategory = getRandomValue(allCategories);
     private final Locator phonesCategory = link("Phones");
     private final Locator laptopsCategory = link("Laptops");
     private final Locator monitorsCategory = link("Monitors");
     private Locator product;
-    private final List<Locator> allProductsTitles = locator("#tbodyid div").all();
-    private final List<Locator> cardTitle = locator("h4.card-title").all();
 
-    private final int randomIndex = getRandomInt(0, allProductsTitles.size());
+    private final List<Locator> allProductsCars = locator("#tbodyid > div").all();
+    private final Locator randomProduct = getRandomValue(allProductsCars);
 
     public HomePage(Page page) {
 
         super(page);
     }
 
-    private List<Locator> getProducts() {
-        return allProductsTitles;
-    }
-
     public HomePage clickPhonesCategory() {
         phonesCategory.click();
-        getPage().waitForLoadState();
 
         return this;
     }
 
-    private Locator getNthProduct(int number) {
-
-        return allProductsTitles.get(number);
-    }
-
-    private Locator getNthCardTitle(int number) {
-
-        return allProductsTitles.get(number);
-    }
-
-    private void getRandomProduct() {
-        getNthProduct(randomIndex).click();
-    }
-
     @Step("Click random ProductTitle.")
-    public ProdPage clickRandomCardTitle() {
-        getNthCardTitle(randomIndex).click();
-        getPage().waitForLoadState();
+    public ProdPage clickRandomProductTitle() {
+        getTitle().click();
 
         return new ProdPage(getPage());
     }
 
+    @Step("Click random Category.")
+    public HomePage clickRandomCategory() {
+        randomCategory.click();
 
+        return this;
+    }
 
+    public Locator getTitle() {
+        return randomProduct.locator("h4.card-title > a");
+    }
 }
 
 

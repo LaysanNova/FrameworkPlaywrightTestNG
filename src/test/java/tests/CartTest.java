@@ -11,10 +11,10 @@ public class CartTest extends BaseTest {
         HomePage homePage = new HomePage(getPage());
 
         homePage
-                .clickPhonesCategory()
-                .clickRandomCardTitle()
-                .clickAddToCartButton();
-
+                .clickRandomCategory()
+                .clickRandomProductTitle()
+                .clickAddToCartButton()
+                .clickOk();
 
 
 //        getPage().waitForTimeout(10000);

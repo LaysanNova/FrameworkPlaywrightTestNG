@@ -12,6 +12,7 @@ abstract class BaseLocator<TPage> {
     private final Page page;
 
     BaseLocator(Page page) {
+
         this.page = page;
     }
 
