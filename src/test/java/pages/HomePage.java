@@ -2,6 +2,7 @@ package pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import io.qameta.allure.Step;
 import pages.model.Footer;
 
@@ -16,7 +17,7 @@ public class HomePage extends Footer<HomePage> implements IRandom{
     private final Locator monitorsCategory = link("Monitors");
     private Locator product;
 
-    private final List<Locator> allProductsCars = locator("#tbodyid > div").all();
+    private final List<Locator> allProductsCars = allProducts("#tbodyid > div");
     private final Locator randomProduct = getRandomValue(allProductsCars);
 
     public HomePage(Page page) {
@@ -45,8 +46,11 @@ public class HomePage extends Footer<HomePage> implements IRandom{
     }
 
     public Locator getTitle() {
+
         return randomProduct.locator("h4.card-title > a");
     }
+
+
 }
 
 
