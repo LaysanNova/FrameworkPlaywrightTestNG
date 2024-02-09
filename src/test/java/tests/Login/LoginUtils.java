@@ -5,6 +5,8 @@ import com.microsoft.playwright.options.AriaRole;
 import utils.reports.ReportUtils;
 import utils.runner.ProjectProperties;
 
+import java.lang.reflect.Method;
+
 import static utils.reports.LoggerUtils.logInfo;
 
 public class LoginUtils {
