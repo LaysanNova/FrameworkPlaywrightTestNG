@@ -7,10 +7,11 @@ import io.qameta.allure.SeverityLevel;
 import jdk.jfr.Description;
 import org.testng.annotations.Test;
 import pages.HomePage;
+import pages.IRandom;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class HomeTest extends BaseTest{
+public class HomeTest extends BaseTest implements IRandom {
 
     @Test(testName = "TC.XXX.XX: Verify Logout Functionality")
     @Description("Objective: To ensure that the logout feature functions correctly and securely terminates the user session.")
