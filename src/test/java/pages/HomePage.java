@@ -50,7 +50,6 @@ public class HomePage extends Footer<HomePage> implements IRandom{
         return randomProduct.locator("h4.card-title > a");
     }
 
-
 }
 
 
