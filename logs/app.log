@@ -1,3 +1,4 @@
+
 2024-02-08 13:20:24.733 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
@@ -3225,3 +3226,366 @@ tests.CartTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 
 2024-02-08 19:37:54.773 INFO  LoginBaseTest - Context closed.
 2024-02-08 19:37:54.938 INFO  LoginBaseTest - Browser closed.
 2024-02-08 19:37:54.949 INFO  LoginBaseTest - Playwright closed.
+
+2024-02-07 07:43:44.383 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-07 07:43:45.146 INFO  BaseTest - API: 'Log in' status 200
+2024-02-07 07:43:45.266 INFO  BaseTest - API: 'Check' status 200
+2024-02-07 07:45:20.715 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-07 07:45:20.747 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-07, 07:45AM
+==========================================================================================
+
+2024-02-07 07:45:20.748 INFO  LoginBaseTest - Playwright created.
+2024-02-07 07:45:20.749 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@2b27cc70 launched.
+
+2024-02-07 07:45:20.770 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:45:20.785 INFO  LoginBaseTest - Context created.
+2024-02-07 07:45:20.789 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:45:20.958 INFO  LoginBaseTest - Page created.
+2024-02-07 07:45:21.396 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:21.402 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:21.423 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:21.423 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:56.200 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-07 07:45:56.226 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-07, 07:45AM
+==========================================================================================
+
+2024-02-07 07:45:56.226 INFO  LoginBaseTest - Playwright created.
+2024-02-07 07:45:56.228 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@6831d8fd launched.
+
+2024-02-07 07:45:56.258 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:45:56.277 INFO  LoginBaseTest - Context created.
+2024-02-07 07:45:56.283 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:45:56.431 INFO  LoginBaseTest - Page created.
+2024-02-07 07:45:56.961 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:56.964 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:56.980 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:56.980 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:57.685 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLogin(1)   ----   PASS	 Run Time: 0 min 0 sec 631 ms
+
+2024-02-07 07:45:57.692 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:45:57.746 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:45:57.752 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:45:57.755 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:45:57.761 INFO  LoginBaseTest - Context created.
+2024-02-07 07:45:57.763 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:45:57.861 INFO  LoginBaseTest - Page created.
+2024-02-07 07:45:58.265 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:58.265 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:58.275 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:58.275 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:58.957 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLogin(2)   ----   PASS	 Run Time: 0 min 0 sec 674 ms
+
+2024-02-07 07:45:58.965 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:45:59.022 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:45:59.026 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:45:59.028 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:45:59.032 INFO  LoginBaseTest - Context created.
+2024-02-07 07:45:59.034 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:45:59.136 INFO  LoginBaseTest - Page created.
+2024-02-07 07:45:59.536 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:59.537 INFO  LoginBaseTest - Testing....
+2024-02-07 07:45:59.573 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:45:59.573 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:00.253 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLogin(3)   ----   PASS	 Run Time: 0 min 0 sec 676 ms
+
+2024-02-07 07:46:00.259 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:00.303 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:00.308 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:00.310 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:46:00.315 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:00.318 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:00.415 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:00.948 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:00.949 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:00.966 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:00.967 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:01.681 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLogin(4)   ----   PASS	 Run Time: 0 min 0 sec 708 ms
+
+2024-02-07 07:46:01.689 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:01.753 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:01.756 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:01.758 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLogin
+2024-02-07 07:46:01.762 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:01.764 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:01.852 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:02.520 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:02.521 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:02.534 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:02.534 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:03.617 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLogin(5)   ----   PASS	 Run Time: 0 min 1 sec 77 ms
+
+2024-02-07 07:46:03.620 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:03.666 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:03.669 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:03.673 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLoginAPI
+2024-02-07 07:46:03.677 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:03.679 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:03.771 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:04.111 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:04.112 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:04.120 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:04.121 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:04.682 INFO  LoginBaseTest - API: 'Log in' status 200
+2024-02-07 07:46:04.803 INFO  LoginBaseTest - API: 'Check' status 200
+2024-02-07 07:46:04.806 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLoginAPI   ----   PASS	 Run Time: 0 min 0 sec 681 ms
+
+2024-02-07 07:46:04.811 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:04.926 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:04.929 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:05.133 INFO  LoginBaseTest - Browser closed.
+2024-02-07 07:46:05.143 INFO  LoginBaseTest - Playwright closed.
+2024-02-07 07:46:25.059 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-07 07:46:25.080 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-07, 07:46AM
+==========================================================================================
+
+2024-02-07 07:46:25.080 INFO  LoginBaseTest - Playwright created.
+2024-02-07 07:46:25.080 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@5a2f016d launched.
+
+2024-02-07 07:46:25.101 INFO  LoginBaseTest - RUN tests.NavigationTest.testLandingURL
+2024-02-07 07:46:25.114 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:25.118 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:25.230 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:25.591 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:25.593 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:25.611 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:25.612 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:26.265 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:26.523 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testLandingURL   ----   PASS	 Run Time: 0 min 0 sec 207 ms
+
+2024-02-07 07:46:26.539 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:26.576 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:26.582 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:26.590 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedIn
+2024-02-07 07:46:26.595 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:26.598 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:26.688 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:27.065 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:27.065 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:27.075 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:27.075 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:27.675 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:29.929 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedIn(1)   ----   PASS	 Run Time: 0 min 2 sec 248 ms
+
+2024-02-07 07:46:29.948 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:30.219 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:30.223 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:30.225 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedIn
+2024-02-07 07:46:30.230 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:30.232 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:30.321 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:30.650 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:30.650 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:30.660 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:30.660 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:31.311 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:33.422 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedIn(2)   ----   PASS	 Run Time: 0 min 2 sec 107 ms
+
+2024-02-07 07:46:33.428 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:33.778 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:33.781 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:33.783 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedIn
+2024-02-07 07:46:33.788 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:33.790 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:33.873 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:34.178 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:34.178 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:34.186 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:34.187 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:34.757 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:36.879 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedIn(3)   ----   PASS	 Run Time: 0 min 2 sec 119 ms
+
+2024-02-07 07:46:36.886 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:37.234 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:37.238 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:37.240 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedIn
+2024-02-07 07:46:37.245 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:37.247 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:37.330 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:37.799 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:37.799 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:37.807 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:37.808 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:38.414 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:40.575 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedIn(4)   ----   PASS	 Run Time: 0 min 2 sec 158 ms
+
+2024-02-07 07:46:40.578 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:40.867 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:40.870 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:40.872 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedIn
+2024-02-07 07:46:40.876 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:40.878 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:40.967 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:41.328 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:41.329 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:41.361 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:41.361 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:41.969 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:44.164 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedIn(5)   ----   PASS	 Run Time: 0 min 2 sec 192 ms
+
+2024-02-07 07:46:44.167 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:44.449 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:44.452 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:44.459 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:46:44.464 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:44.465 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:44.552 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:44.893 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:44.893 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:44.901 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:44.901 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:45.556 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:46.023 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:48.214 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(1)   ----   PASS	 Run Time: 0 min 2 sec 655 ms
+
+2024-02-07 07:46:48.217 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:48.536 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:48.540 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:48.542 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:46:48.546 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:48.548 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:48.636 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:48.958 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:48.958 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:48.971 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:48.971 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:49.596 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:50.061 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:52.185 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(2)   ----   PASS	 Run Time: 0 min 2 sec 584 ms
+
+2024-02-07 07:46:52.192 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:52.566 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:52.569 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:52.574 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:46:52.579 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:52.581 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:52.679 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:52.999 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:52.999 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:53.011 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:53.011 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:53.714 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:54.185 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:56.306 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(3)   ----   PASS	 Run Time: 0 min 2 sec 588 ms
+
+2024-02-07 07:46:56.311 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:46:56.666 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:46:56.669 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:46:56.671 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:46:56.676 INFO  LoginBaseTest - Context created.
+2024-02-07 07:46:56.678 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:46:56.770 INFO  LoginBaseTest - Page created.
+2024-02-07 07:46:57.108 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:57.108 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:57.116 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:46:57.116 INFO  LoginBaseTest - Testing....
+2024-02-07 07:46:57.746 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:46:58.202 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:47:00.407 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(4)   ----   PASS	 Run Time: 0 min 2 sec 657 ms
+
+2024-02-07 07:47:00.420 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:47:00.714 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:47:00.717 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:47:00.718 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:47:00.723 INFO  LoginBaseTest - Context created.
+2024-02-07 07:47:00.725 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:47:00.810 INFO  LoginBaseTest - Page created.
+2024-02-07 07:47:01.187 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:47:01.188 INFO  LoginBaseTest - Testing....
+2024-02-07 07:47:01.199 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:47:01.199 INFO  LoginBaseTest - Testing....
+2024-02-07 07:47:01.769 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:47:02.234 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:47:04.350 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(5)   ----   PASS	 Run Time: 0 min 2 sec 577 ms
+
+2024-02-07 07:47:04.354 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:47:04.731 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:47:04.733 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:47:04.735 INFO  LoginBaseTest - RUN tests.NavigationTest.testNavigationCustomerLoggedOut
+2024-02-07 07:47:04.740 INFO  LoginBaseTest - Context created.
+2024-02-07 07:47:04.741 INFO  LoginBaseTest - Tracing started
+2024-02-07 07:47:04.821 INFO  LoginBaseTest - Page created.
+2024-02-07 07:47:05.118 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:47:05.119 INFO  LoginBaseTest - Testing....
+2024-02-07 07:47:05.126 INFO  LoginBaseTest - Open Home page
+2024-02-07 07:47:05.126 INFO  LoginBaseTest - Testing....
+2024-02-07 07:47:05.775 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:47:06.230 INFO  LoginBaseTest - Login context: Logout successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-07 07:47:08.323 INFO  LoginBaseTest - ✅
+
+tests.NavigationTest.testNavigationCustomerLoggedOut(6)   ----   PASS	 Run Time: 0 min 2 sec 543 ms
+
+2024-02-07 07:47:08.327 INFO  LoginBaseTest - Page closed.
+2024-02-07 07:47:08.680 INFO  LoginBaseTest - Tracing stopped
+2024-02-07 07:47:08.683 INFO  LoginBaseTest - Context closed.
+2024-02-07 07:47:08.885 INFO  LoginBaseTest - Browser closed.
+2024-02-07 07:47:08.906 INFO  LoginBaseTest - Playwright closed.
+
