@@ -7,4 +7,5 @@ public class Footer<TPage> extends BaseMenu<TPage> {
     protected Footer(Page page) {
         super(page);
     }
+
 }

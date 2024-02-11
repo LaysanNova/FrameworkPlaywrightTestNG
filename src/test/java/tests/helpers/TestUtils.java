@@ -10,8 +10,8 @@ public class TestUtils {
 
     }
 
-    public static void waiter(String css) {
+    public static String extractPrice(Locator locator) {
 
-
+        return locator.innerText().split(" ")[0].replace("$", "");
     }
 }

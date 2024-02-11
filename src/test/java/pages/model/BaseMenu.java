@@ -6,13 +6,13 @@ import io.qameta.allure.Step;
 import pages.*;
 import pages.model.BaseLocator;
 
-abstract class BaseMenu<TPage> extends BaseLocator<TPage> {
+abstract class BaseMenu<TPage> extends PopDialog<TPage> {
 
     private final Locator logo = image("PRODUCT STORE");
     private final Locator homeItem = link("Home");
     private final Locator contactItem = link("Contact");
     private final Locator aboutUsItem = link("About us");
-    private final Locator cartItem = link("Cart");
+    private final Locator cartItem = exactLink("Cart");
     private final Locator loginItem = link("Log in");
     private final Locator signUpItem = link("Sign up");
     private final Locator logOutItem = link("Log out");

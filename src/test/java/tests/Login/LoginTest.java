@@ -37,7 +37,8 @@ public class LoginTest extends LoginBaseTest {
                 .inputUserName(userName)
                 .inputPassword(password)
                 .verifyAlertMessage(message)
-                .clickLoginButton();
+                .clickLoginButton()
+        ;
 
         final Locator welcome = new HomePage(getPage()).getWelcomeMessage();
         final Locator logOut = new HomePage(getPage()).getLogOutItem();
