@@ -1,10 +1,14 @@
 package utils.api;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
 import utils.reports.LoggerUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class APIUtils {
 
@@ -78,5 +82,26 @@ public class APIUtils {
             LoggerUtils.logException("API: EXCEPTION: FAILED to extract Auth_token");
             Assert.fail();
         }
+    }
+
+    public static JsonArray getProductByCategory(String cat) {
+
+        JsonArray jsonArray = new JsonArray();
+
+        final APIResponse apiResponse = APIServices.postProducts(cat);
+
+        checkStatus(apiResponse, "Category");
+
+        final JsonObject jsResponse = initJsonObject(apiResponse.text());
+
+        try {
+            jsonArray =  jsResponse.getAsJsonArray("Items");
+
+        } catch (Exception e) {
+
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get products by category " + cat + ".");
+        }
+
+        return jsonArray;
     }
 }

@@ -25,8 +25,10 @@ public final class NavigationTest extends BaseTest {
         assertThat(getPage()).hasTitle(TITLE);
     }
 
-    @Test(testName = "TC.XXX.XX: Verify Navigation Bar Functionality when customer is logged in.",
-            dataProvider = "menuItemsLoggedIn", dataProviderClass = TestData.class)
+    @Test(
+            testName = "TC.XXX.XX: Verify Navigation Bar Functionality when customer is logged in.",
+            dataProvider = "menuItemsLoggedIn", dataProviderClass = TestData.class
+    )
     @Description("To ensure that the navigation bar in the web application works correctly, allowing users to navigate seamlessly between different sections.")
     @Parameters({"menuName", "expectedEndPoint"})
     @Severity(SeverityLevel.CRITICAL)

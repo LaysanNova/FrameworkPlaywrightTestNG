@@ -1,3 +1,774 @@
+2024-02-11 08:04:37.144 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 08:04:37.173 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 08:04AM
+==========================================================================================
+
+2024-02-11 08:04:37.174 INFO  LoginBaseTest - Playwright created.
+2024-02-11 08:04:37.174 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@619bd14c launched.
+
+2024-02-11 08:04:37.193 INFO  LoginBaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 08:04:37.210 INFO  LoginBaseTest - Context created.
+2024-02-11 08:04:37.215 INFO  LoginBaseTest - Tracing started
+2024-02-11 08:04:37.403 INFO  LoginBaseTest - Page created.
+2024-02-11 08:04:37.943 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:04:37.944 INFO  LoginBaseTest - Testing....
+2024-02-11 08:04:39.025 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 08:04:39.065 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:04:39.065 INFO  LoginBaseTest - Testing....
+2024-02-11 08:04:40.673 INFO  LoginBaseTest - ✅
+
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 544 ms
+
+2024-02-11 08:04:40.684 INFO  LoginBaseTest - Page closed.
+2024-02-11 08:04:40.762 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 08:04:40.768 INFO  LoginBaseTest - Context closed.
+2024-02-11 08:04:40.965 INFO  LoginBaseTest - Browser closed.
+2024-02-11 08:04:40.976 INFO  LoginBaseTest - Playwright closed.
+2024-02-11 08:11:51.935 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 08:11:51.974 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 08:11AM
+==========================================================================================
+
+2024-02-11 08:11:51.974 INFO  LoginBaseTest - Playwright created.
+2024-02-11 08:11:51.975 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@6e5bfdfc launched.
+
+2024-02-11 08:11:52.002 INFO  LoginBaseTest - RUN tests.Login.LoginTest.testLoginAPI
+2024-02-11 08:11:52.016 INFO  LoginBaseTest - Context created.
+2024-02-11 08:11:52.021 INFO  LoginBaseTest - Tracing started
+2024-02-11 08:11:52.224 INFO  LoginBaseTest - Page created.
+2024-02-11 08:11:52.765 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:11:52.768 INFO  LoginBaseTest - Testing....
+2024-02-11 08:11:52.787 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:11:52.788 INFO  LoginBaseTest - Testing....
+2024-02-11 08:11:53.757 INFO  LoginBaseTest - API: 'Log in' status 200
+2024-02-11 08:31:45.860 INFO  LoginBaseTest - API: 'Check' status 200
+2024-02-11 08:31:45.872 INFO  LoginBaseTest - ✅
+
+tests.Login.LoginTest.testLoginAPI   ----   PASS	 Run Time: 19 min 53 sec 23 ms
+
+2024-02-11 08:31:45.875 INFO  LoginBaseTest - Page closed.
+2024-02-11 08:31:45.887 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 08:31:45.894 INFO  LoginBaseTest - Context closed.
+2024-02-11 08:58:11.661 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 08:58:11.717 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 08:58AM
+==========================================================================================
+
+2024-02-11 08:58:11.718 INFO  LoginBaseTest - Playwright created.
+2024-02-11 08:58:11.732 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@5167268 launched.
+
+2024-02-11 08:58:11.758 INFO  LoginBaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 08:58:11.773 INFO  LoginBaseTest - Context created.
+2024-02-11 08:58:11.792 INFO  LoginBaseTest - Tracing started
+2024-02-11 08:58:12.019 INFO  LoginBaseTest - Page created.
+2024-02-11 08:58:12.605 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:58:12.609 INFO  LoginBaseTest - Testing....
+2024-02-11 08:58:13.666 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 08:58:13.683 INFO  LoginBaseTest - Open Home page
+2024-02-11 08:58:13.683 INFO  LoginBaseTest - Testing....
+2024-02-11 08:58:13.920 INFO  LoginBaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 0 sec 179 ms
+
+2024-02-11 08:58:13.928 INFO  LoginBaseTest - Page closed.
+2024-02-11 08:58:13.981 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 08:58:13.986 INFO  LoginBaseTest - Context closed.
+2024-02-11 08:58:14.181 INFO  LoginBaseTest - Browser closed.
+2024-02-11 08:58:14.193 INFO  LoginBaseTest - Playwright closed.
+2024-02-11 09:01:48.403 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:01:48.446 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:01AM
+==========================================================================================
+
+2024-02-11 09:01:48.446 INFO  LoginBaseTest - Playwright created.
+2024-02-11 09:01:48.447 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@7728643a launched.
+
+2024-02-11 09:01:48.482 INFO  LoginBaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:01:48.515 INFO  LoginBaseTest - Context created.
+2024-02-11 09:01:48.522 INFO  LoginBaseTest - Tracing started
+2024-02-11 09:01:48.754 INFO  LoginBaseTest - Page created.
+2024-02-11 09:01:49.467 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:01:49.469 INFO  LoginBaseTest - Testing....
+2024-02-11 09:01:50.620 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:01:50.635 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:01:50.635 INFO  LoginBaseTest - Testing....
+2024-02-11 09:01:50.957 INFO  LoginBaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 0 sec 248 ms
+
+2024-02-11 09:01:50.965 INFO  LoginBaseTest - Page closed.
+2024-02-11 09:01:51.047 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 09:01:51.052 INFO  LoginBaseTest - Context closed.
+2024-02-11 09:01:51.255 INFO  LoginBaseTest - Browser closed.
+2024-02-11 09:01:51.269 INFO  LoginBaseTest - Playwright closed.
+2024-02-11 09:02:49.994 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:02:50.017 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:02AM
+==========================================================================================
+
+2024-02-11 09:02:50.017 INFO  LoginBaseTest - Playwright created.
+2024-02-11 09:02:50.018 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@1b39fd82 launched.
+
+2024-02-11 09:02:50.040 INFO  LoginBaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:02:50.057 INFO  LoginBaseTest - Context created.
+2024-02-11 09:02:50.061 INFO  LoginBaseTest - Tracing started
+2024-02-11 09:02:50.216 INFO  LoginBaseTest - Page created.
+2024-02-11 09:02:50.562 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:02:50.565 INFO  LoginBaseTest - Testing....
+2024-02-11 09:02:51.606 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:02:51.622 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:02:51.622 INFO  LoginBaseTest - Testing....
+2024-02-11 09:02:51.927 INFO  LoginBaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 0 sec 243 ms
+
+2024-02-11 09:02:51.934 INFO  LoginBaseTest - Page closed.
+2024-02-11 09:02:52.045 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 09:02:52.051 INFO  LoginBaseTest - Context closed.
+2024-02-11 09:02:52.203 INFO  LoginBaseTest - Browser closed.
+2024-02-11 09:02:52.215 INFO  LoginBaseTest - Playwright closed.
+2024-02-11 09:03:53.314 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:03:53.340 INFO  LoginBaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:03AM
+==========================================================================================
+
+2024-02-11 09:03:53.340 INFO  LoginBaseTest - Playwright created.
+2024-02-11 09:03:53.341 INFO  LoginBaseTest - Browser CHROMIUM BrowserImpl@588ab592 launched.
+
+2024-02-11 09:03:53.364 INFO  LoginBaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:03:53.386 INFO  LoginBaseTest - Context created.
+2024-02-11 09:03:53.393 INFO  LoginBaseTest - Tracing started
+2024-02-11 09:03:53.619 INFO  LoginBaseTest - Page created.
+2024-02-11 09:03:53.950 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:03:53.952 INFO  LoginBaseTest - Testing....
+2024-02-11 09:03:54.947 INFO  LoginBaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:03:54.963 INFO  LoginBaseTest - Open Home page
+2024-02-11 09:03:54.963 INFO  LoginBaseTest - Testing....
+2024-02-11 09:03:55.364 INFO  LoginBaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 0 sec 337 ms
+
+2024-02-11 09:03:55.374 INFO  LoginBaseTest - Page closed.
+2024-02-11 09:03:55.431 INFO  LoginBaseTest - Tracing stopped
+2024-02-11 09:03:55.437 INFO  LoginBaseTest - Context closed.
+2024-02-11 09:03:55.610 INFO  LoginBaseTest - Browser closed.
+2024-02-11 09:03:55.621 INFO  LoginBaseTest - Playwright closed.
+2024-02-11 09:08:07.896 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:08:07.932 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:08AM
+==========================================================================================
+
+2024-02-11 09:08:07.932 INFO  BaseTest - Playwright created.
+2024-02-11 09:08:07.933 INFO  BaseTest - Browser CHROMIUM BrowserImpl@1c807b1d launched.
+
+2024-02-11 09:08:07.954 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:08:07.970 INFO  BaseTest - Context created.
+2024-02-11 09:08:07.975 INFO  BaseTest - Tracing started
+2024-02-11 09:08:08.124 INFO  BaseTest - Page created.
+2024-02-11 09:08:08.616 INFO  BaseTest - Open Home page
+2024-02-11 09:08:08.618 INFO  BaseTest - Testing....
+2024-02-11 09:08:09.629 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:08:09.644 INFO  BaseTest - Open Home page
+2024-02-11 09:08:09.644 INFO  BaseTest - Testing....
+2024-02-11 09:08:10.044 INFO  BaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 0 sec 340 ms
+
+2024-02-11 09:08:10.052 INFO  BaseTest - Page closed.
+2024-02-11 09:08:10.139 INFO  BaseTest - Tracing stopped
+2024-02-11 09:08:10.144 INFO  BaseTest - Context closed.
+2024-02-11 09:08:10.329 INFO  BaseTest - Browser closed.
+2024-02-11 09:08:10.340 INFO  BaseTest - Playwright closed.
+2024-02-11 09:10:52.819 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:10:52.853 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:10AM
+==========================================================================================
+
+2024-02-11 09:10:52.853 INFO  BaseTest - Playwright created.
+2024-02-11 09:10:52.854 INFO  BaseTest - Browser CHROMIUM BrowserImpl@c074c0c launched.
+
+2024-02-11 09:10:52.876 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:10:52.891 INFO  BaseTest - Context created.
+2024-02-11 09:10:52.895 INFO  BaseTest - Tracing started
+2024-02-11 09:10:53.065 INFO  BaseTest - Page created.
+2024-02-11 09:10:53.647 INFO  BaseTest - Open Home page
+2024-02-11 09:10:53.651 INFO  BaseTest - Testing....
+2024-02-11 09:10:54.686 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:10:54.707 INFO  BaseTest - Open Home page
+2024-02-11 09:10:54.707 INFO  BaseTest - Testing....
+2024-02-11 09:10:56.365 INFO  BaseTest - ✅
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 594 ms
+
+2024-02-11 09:10:56.378 INFO  BaseTest - Page closed.
+2024-02-11 09:10:56.472 INFO  BaseTest - Tracing stopped
+2024-02-11 09:10:56.478 INFO  BaseTest - Context closed.
+2024-02-11 09:10:56.818 INFO  BaseTest - Browser closed.
+2024-02-11 09:10:56.832 INFO  BaseTest - Playwright closed.
+2024-02-11 09:15:33.285 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:15:33.332 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:15AM
+==========================================================================================
+
+2024-02-11 09:15:33.332 INFO  BaseTest - Playwright created.
+2024-02-11 09:15:33.333 INFO  BaseTest - Browser CHROMIUM BrowserImpl@255990cc launched.
+
+2024-02-11 09:15:33.358 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:15:33.387 INFO  BaseTest - Context created.
+2024-02-11 09:15:33.393 INFO  BaseTest - Tracing started
+2024-02-11 09:15:33.594 INFO  BaseTest - Page created.
+2024-02-11 09:15:34.158 INFO  BaseTest - Open Home page
+2024-02-11 09:15:34.161 INFO  BaseTest - Testing....
+2024-02-11 09:15:35.304 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:15:35.323 INFO  BaseTest - Open Home page
+2024-02-11 09:15:35.323 INFO  BaseTest - Testing....
+2024-02-11 09:15:37.103 INFO  BaseTest - ✅
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 713 ms
+
+2024-02-11 09:15:37.115 INFO  BaseTest - Page closed.
+2024-02-11 09:15:37.249 INFO  BaseTest - Tracing stopped
+2024-02-11 09:15:37.255 INFO  BaseTest - Context closed.
+2024-02-11 09:15:37.497 INFO  BaseTest - Browser closed.
+2024-02-11 09:15:37.509 INFO  BaseTest - Playwright closed.
+2024-02-11 09:22:56.754 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:22:56.785 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:22AM
+==========================================================================================
+
+2024-02-11 09:22:56.785 INFO  BaseTest - Playwright created.
+2024-02-11 09:22:56.785 INFO  BaseTest - Browser CHROMIUM BrowserImpl@1c807b1d launched.
+
+2024-02-11 09:22:56.807 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:22:56.819 INFO  BaseTest - Context created.
+2024-02-11 09:22:56.824 INFO  BaseTest - Tracing started
+2024-02-11 09:22:57.017 INFO  BaseTest - Page created.
+2024-02-11 09:22:57.551 INFO  BaseTest - Open Home page
+2024-02-11 09:22:57.557 INFO  BaseTest - Testing....
+2024-02-11 09:22:58.621 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:22:58.639 INFO  BaseTest - Open Home page
+2024-02-11 09:22:58.640 INFO  BaseTest - Testing....
+2024-02-11 09:23:00.350 INFO  BaseTest - ✅
+
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 639 ms
+
+2024-02-11 09:23:00.369 INFO  BaseTest - Page closed.
+2024-02-11 09:23:00.482 INFO  BaseTest - Tracing stopped
+2024-02-11 09:23:00.488 INFO  BaseTest - Context closed.
+2024-02-11 09:23:00.643 INFO  BaseTest - Browser closed.
+2024-02-11 09:23:00.654 INFO  BaseTest - Playwright closed.
+2024-02-11 09:28:36.921 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:28:36.955 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:28AM
+==========================================================================================
+
+2024-02-11 09:28:36.955 INFO  BaseTest - Playwright created.
+2024-02-11 09:28:36.957 INFO  BaseTest - Browser CHROMIUM BrowserImpl@7048f722 launched.
+
+2024-02-11 09:28:36.976 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:28:37.002 INFO  BaseTest - Context created.
+2024-02-11 09:28:37.009 INFO  BaseTest - Tracing started
+2024-02-11 09:28:37.218 INFO  BaseTest - Page created.
+2024-02-11 09:28:37.655 INFO  BaseTest - Open Home page
+2024-02-11 09:28:37.661 INFO  BaseTest - Testing....
+2024-02-11 09:28:38.745 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:28:38.765 INFO  BaseTest - Open Home page
+2024-02-11 09:28:38.765 INFO  BaseTest - Testing....
+2024-02-11 09:28:40.472 INFO  BaseTest - ✅
+
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 628 ms
+
+2024-02-11 09:28:40.481 INFO  BaseTest - Page closed.
+2024-02-11 09:28:40.619 INFO  BaseTest - Tracing stopped
+2024-02-11 09:28:40.625 INFO  BaseTest - Context closed.
+2024-02-11 09:28:40.852 INFO  BaseTest - Browser closed.
+2024-02-11 09:28:40.866 INFO  BaseTest - Playwright closed.
+2024-02-11 09:29:30.515 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:29:30.544 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:29AM
+==========================================================================================
+
+2024-02-11 09:29:30.544 INFO  BaseTest - Playwright created.
+2024-02-11 09:29:30.544 INFO  BaseTest - Browser CHROMIUM BrowserImpl@69c43e48 launched.
+
+2024-02-11 09:29:30.566 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:29:30.586 INFO  BaseTest - Context created.
+2024-02-11 09:29:30.592 INFO  BaseTest - Tracing started
+2024-02-11 09:29:30.815 INFO  BaseTest - Page created.
+2024-02-11 09:29:31.361 INFO  BaseTest - Open Home page
+2024-02-11 09:29:31.363 INFO  BaseTest - Testing....
+2024-02-11 09:29:32.412 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:29:32.429 INFO  BaseTest - Open Home page
+2024-02-11 09:29:32.429 INFO  BaseTest - Testing....
+2024-02-11 09:29:34.086 INFO  BaseTest - ✅
+
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 1 sec 593 ms
+
+2024-02-11 09:29:34.096 INFO  BaseTest - Page closed.
+2024-02-11 09:29:34.193 INFO  BaseTest - Tracing stopped
+2024-02-11 09:29:34.198 INFO  BaseTest - Context closed.
+2024-02-11 09:29:34.357 INFO  BaseTest - Browser closed.
+2024-02-11 09:29:34.369 INFO  BaseTest - Playwright closed.
+2024-02-11 09:34:54.971 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:34:54.999 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:34AM
+==========================================================================================
+
+2024-02-11 09:34:54.999 INFO  BaseTest - Playwright created.
+2024-02-11 09:34:55.000 INFO  BaseTest - Browser CHROMIUM BrowserImpl@4d157787 launched.
+
+2024-02-11 09:34:55.020 INFO  BaseTest - RUN tests.HomeTest.testPurchaseWithCartValidationE2E
+2024-02-11 09:34:55.034 INFO  BaseTest - Context created.
+2024-02-11 09:34:55.039 INFO  BaseTest - Tracing started
+2024-02-11 09:34:55.226 INFO  BaseTest - Page created.
+2024-02-11 09:34:55.772 INFO  BaseTest - Open Home page
+2024-02-11 09:34:55.774 INFO  BaseTest - Testing....
+2024-02-11 09:34:56.850 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:34:56.868 INFO  BaseTest - Open Home page
+2024-02-11 09:34:56.868 INFO  BaseTest - Testing....
+2024-02-11 09:35:03.906 INFO  BaseTest - ✅
+
+tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 6 sec 977 ms
+
+2024-02-11 09:35:03.926 INFO  BaseTest - Page closed.
+2024-02-11 09:35:04.020 INFO  BaseTest - Tracing stopped
+2024-02-11 09:35:04.027 INFO  BaseTest - Context closed.
+2024-02-11 09:35:04.263 INFO  BaseTest - Browser closed.
+2024-02-11 09:35:04.276 INFO  BaseTest - Playwright closed.
+2024-02-11 09:35:32.623 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:35:32.646 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:35AM
+==========================================================================================
+
+2024-02-11 09:35:32.647 INFO  BaseTest - Playwright created.
+2024-02-11 09:35:32.648 INFO  BaseTest - Browser CHROMIUM BrowserImpl@7048f722 launched.
+
+2024-02-11 09:35:32.671 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:35:32.692 INFO  BaseTest - Context created.
+2024-02-11 09:35:32.697 INFO  BaseTest - Tracing started
+2024-02-11 09:35:32.885 INFO  BaseTest - Page created.
+2024-02-11 09:35:33.232 INFO  BaseTest - Open Home page
+2024-02-11 09:35:33.234 INFO  BaseTest - Testing....
+2024-02-11 09:35:34.270 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:35:34.287 INFO  BaseTest - Open Home page
+2024-02-11 09:35:34.287 INFO  BaseTest - Testing....
+2024-02-11 09:35:49.684 INFO  BaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 15 sec 335 ms
+
+2024-02-11 09:35:49.690 INFO  BaseTest - Page closed.
+2024-02-11 09:35:49.879 INFO  BaseTest - Tracing stopped
+2024-02-11 09:35:49.884 INFO  BaseTest - Context closed.
+2024-02-11 09:35:50.045 INFO  BaseTest - Browser closed.
+2024-02-11 09:35:50.054 INFO  BaseTest - Playwright closed.
+2024-02-11 09:36:30.777 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:36:30.803 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:36AM
+==========================================================================================
+
+2024-02-11 09:36:30.803 INFO  BaseTest - Playwright created.
+2024-02-11 09:36:30.804 INFO  BaseTest - Browser CHROMIUM BrowserImpl@733037 launched.
+
+2024-02-11 09:36:30.824 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:36:30.845 INFO  BaseTest - Context created.
+2024-02-11 09:36:30.853 INFO  BaseTest - Tracing started
+2024-02-11 09:36:31.032 INFO  BaseTest - Page created.
+2024-02-11 09:36:31.489 INFO  BaseTest - Open Home page
+2024-02-11 09:36:31.490 INFO  BaseTest - Testing....
+2024-02-11 09:36:32.524 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:36:32.543 INFO  BaseTest - Open Home page
+2024-02-11 09:36:32.543 INFO  BaseTest - Testing....
+2024-02-11 09:36:41.915 INFO  BaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 9 sec 291 ms
+
+2024-02-11 09:36:41.920 INFO  BaseTest - Page closed.
+2024-02-11 09:36:42.123 INFO  BaseTest - Tracing stopped
+2024-02-11 09:36:42.131 INFO  BaseTest - Context closed.
+2024-02-11 09:36:42.274 INFO  BaseTest - Browser closed.
+2024-02-11 09:36:42.285 INFO  BaseTest - Playwright closed.
+2024-02-11 09:37:05.318 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:37:05.345 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:37AM
+==========================================================================================
+
+2024-02-11 09:37:05.345 INFO  BaseTest - Playwright created.
+2024-02-11 09:37:05.346 INFO  BaseTest - Browser CHROMIUM BrowserImpl@c074c0c launched.
+
+2024-02-11 09:37:05.369 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:37:05.385 INFO  BaseTest - Context created.
+2024-02-11 09:37:05.391 INFO  BaseTest - Tracing started
+2024-02-11 09:37:05.588 INFO  BaseTest - Page created.
+2024-02-11 09:37:06.090 INFO  BaseTest - Open Home page
+2024-02-11 09:37:06.093 INFO  BaseTest - Testing....
+2024-02-11 09:37:07.139 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:37:07.159 INFO  BaseTest - Open Home page
+2024-02-11 09:37:07.160 INFO  BaseTest - Testing....
+2024-02-11 09:37:13.508 INFO  BaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 6 sec 287 ms
+
+2024-02-11 09:37:13.515 INFO  BaseTest - Page closed.
+2024-02-11 09:37:13.593 INFO  BaseTest - Tracing stopped
+2024-02-11 09:37:13.601 INFO  BaseTest - Context closed.
+2024-02-11 09:37:13.762 INFO  BaseTest - Browser closed.
+2024-02-11 09:37:13.773 INFO  BaseTest - Playwright closed.
+2024-02-11 09:38:14.379 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:38:14.405 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:38AM
+==========================================================================================
+
+2024-02-11 09:38:14.406 INFO  BaseTest - Playwright created.
+2024-02-11 09:38:14.406 INFO  BaseTest - Browser CHROMIUM BrowserImpl@547e29a4 launched.
+
+2024-02-11 09:38:14.426 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:38:14.441 INFO  BaseTest - Context created.
+2024-02-11 09:38:14.447 INFO  BaseTest - Tracing started
+2024-02-11 09:38:14.628 INFO  BaseTest - Page created.
+2024-02-11 09:38:15.148 INFO  BaseTest - Open Home page
+2024-02-11 09:38:15.150 INFO  BaseTest - Testing....
+2024-02-11 09:38:16.202 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 09:38:16.218 INFO  BaseTest - Open Home page
+2024-02-11 09:38:16.218 INFO  BaseTest - Testing....
+2024-02-11 09:38:22.600 INFO  BaseTest - ✅
+
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 6 sec 321 ms
+
+2024-02-11 09:38:22.606 INFO  BaseTest - Page closed.
+2024-02-11 09:38:22.989 INFO  BaseTest - Tracing stopped
+2024-02-11 09:38:22.995 INFO  BaseTest - Context closed.
+2024-02-11 09:38:23.161 INFO  BaseTest - Browser closed.
+2024-02-11 09:38:23.174 INFO  BaseTest - Playwright closed.
+2024-02-11 09:59:58.293 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 09:59:58.325 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 09:59AM
+==========================================================================================
+
+2024-02-11 09:59:58.325 INFO  BaseTest - Playwright created.
+2024-02-11 09:59:58.326 INFO  BaseTest - Browser CHROMIUM BrowserImpl@2024293c launched.
+
+2024-02-11 09:59:58.355 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 09:59:58.384 INFO  BaseTest - Context created.
+2024-02-11 09:59:58.388 INFO  BaseTest - Tracing started
+2024-02-11 09:59:58.593 INFO  BaseTest - Page created.
+2024-02-11 09:59:59.236 INFO  BaseTest - Open Home page
+2024-02-11 09:59:59.239 INFO  BaseTest - Testing....
+2024-02-11 10:00:00.767 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 10:00:00.783 INFO  BaseTest - Open Home page
+2024-02-11 10:00:00.784 INFO  BaseTest - Testing....
+2024-02-11 10:00:03.635 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:00:03.638 ERROR BaseTest - ❗API: EXCEPTION: FAILED to extract token, expiration, username
+2024-02-11 10:00:03.652 ERROR BaseTest - ❌
+
+tests.HomeTest.testProductDisplayByCategory   ----   FAIL	 Run Time: 0 min 2 sec 797 ms
+
+2024-02-11 10:00:03.659 INFO  BaseTest - Page closed.
+2024-02-11 10:00:03.660 INFO  BaseTest - Tracing saved
+2024-02-11 10:00:04.156 INFO  BaseTest - Video saved
+2024-02-11 10:00:04.709 INFO  BaseTest - Tracing stopped
+2024-02-11 10:00:04.715 INFO  BaseTest - Context closed.
+2024-02-11 10:00:04.874 INFO  BaseTest - Browser closed.
+2024-02-11 10:00:04.889 INFO  BaseTest - Playwright closed.
+2024-02-11 10:00:54.550 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:00:54.578 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 10:00AM
+==========================================================================================
+
+2024-02-11 10:00:54.578 INFO  BaseTest - Playwright created.
+2024-02-11 10:00:54.579 INFO  BaseTest - Browser CHROMIUM BrowserImpl@3e2fc448 launched.
+
+2024-02-11 10:00:54.602 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 10:00:54.616 INFO  BaseTest - Context created.
+2024-02-11 10:00:54.620 INFO  BaseTest - Tracing started
+2024-02-11 10:00:54.823 INFO  BaseTest - Page created.
+2024-02-11 10:00:55.272 INFO  BaseTest - Open Home page
+2024-02-11 10:00:55.275 INFO  BaseTest - Testing....
+2024-02-11 10:00:56.318 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 10:00:56.333 INFO  BaseTest - Open Home page
+2024-02-11 10:00:56.334 INFO  BaseTest - Testing....
+2024-02-11 10:00:59.050 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:00:59.053 ERROR BaseTest - ❗API: EXCEPTION: FAILED to extract token, expiration, username
+2024-02-11 10:00:59.068 ERROR BaseTest - ❌
+
+tests.HomeTest.testProductDisplayByCategory   ----   FAIL	 Run Time: 0 min 2 sec 664 ms
+
+2024-02-11 10:00:59.074 INFO  BaseTest - Page closed.
+2024-02-11 10:00:59.075 INFO  BaseTest - Tracing saved
+2024-02-11 10:00:59.615 INFO  BaseTest - Video saved
+2024-02-11 10:01:00.145 INFO  BaseTest - Tracing stopped
+2024-02-11 10:01:00.151 INFO  BaseTest - Context closed.
+2024-02-11 10:01:00.339 INFO  BaseTest - Browser closed.
+2024-02-11 10:01:00.348 INFO  BaseTest - Playwright closed.
+2024-02-11 10:01:10.802 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:01:10.833 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 10:01AM
+==========================================================================================
+
+2024-02-11 10:01:10.834 INFO  BaseTest - Playwright created.
+2024-02-11 10:01:10.834 INFO  BaseTest - Browser CHROMIUM BrowserImpl@3ef41c66 launched.
+
+2024-02-11 10:01:10.862 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 10:01:10.880 INFO  BaseTest - Context created.
+2024-02-11 10:01:10.884 INFO  BaseTest - Tracing started
+2024-02-11 10:01:11.036 INFO  BaseTest - Page created.
+2024-02-11 10:01:11.367 INFO  BaseTest - Open Home page
+2024-02-11 10:01:11.369 INFO  BaseTest - Testing....
+2024-02-11 10:01:12.416 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 10:01:12.436 INFO  BaseTest - Open Home page
+2024-02-11 10:01:12.436 INFO  BaseTest - Testing....
+2024-02-11 10:01:15.053 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:02:47.075 ERROR BaseTest - ❗API: EXCEPTION: FAILED to extract token, expiration, username
+2024-02-11 10:06:29.729 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:06:29.771 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 10:06AM
+==========================================================================================
+
+2024-02-11 10:06:29.771 INFO  BaseTest - Playwright created.
+2024-02-11 10:06:29.772 INFO  BaseTest - Browser CHROMIUM BrowserImpl@547e29a4 launched.
+
+2024-02-11 10:06:29.792 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 10:06:29.811 INFO  BaseTest - Context created.
+2024-02-11 10:06:29.816 INFO  BaseTest - Tracing started
+2024-02-11 10:06:30.012 INFO  BaseTest - Page created.
+2024-02-11 10:06:30.421 INFO  BaseTest - Open Home page
+2024-02-11 10:06:30.426 INFO  BaseTest - Testing....
+2024-02-11 10:06:31.524 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 10:06:31.542 INFO  BaseTest - Open Home page
+2024-02-11 10:06:31.542 INFO  BaseTest - Testing....
+2024-02-11 10:06:34.308 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:06:38.515 INFO  BaseTest - ✅
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 6 sec 909 ms
+
+2024-02-11 10:06:38.523 INFO  BaseTest - Page closed.
+2024-02-11 10:06:38.739 INFO  BaseTest - Tracing stopped
+2024-02-11 10:06:38.744 INFO  BaseTest - Context closed.
+2024-02-11 10:06:38.940 INFO  BaseTest - Browser closed.
+2024-02-11 10:06:38.950 INFO  BaseTest - Playwright closed.
+2024-02-11 10:34:02.394 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:34:08.208 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:34:55.755 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:35:01.196 INFO  BaseTest - API: 'Log in' status 200
+2024-02-11 10:35:01.453 INFO  BaseTest - API: 'Check' status 200
+2024-02-11 10:35:01.641 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 10:59:07.208 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 10:59:12.022 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:03:00.161 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:03:04.754 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:03:33.691 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:03:38.115 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:04:50.394 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:04:54.951 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:10:41.419 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:10:46.021 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:10:54.914 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:10:59.203 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:11:25.995 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:11:26.026 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 11:11AM
+==========================================================================================
+
+2024-02-11 11:11:26.026 INFO  BaseTest - Playwright created.
+2024-02-11 11:11:26.031 INFO  BaseTest - Browser CHROMIUM BrowserImpl@3e2fc448 launched.
+
+2024-02-11 11:11:26.050 INFO  BaseTest - RUN tests.HomeTest.testProductDisplayByCategory
+2024-02-11 11:11:26.063 INFO  BaseTest - Context created.
+2024-02-11 11:11:26.073 INFO  BaseTest - Tracing started
+2024-02-11 11:11:26.223 INFO  BaseTest - Page created.
+2024-02-11 11:11:26.704 INFO  BaseTest - Open Home page
+2024-02-11 11:11:26.708 INFO  BaseTest - Testing....
+2024-02-11 11:11:28.847 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 11:11:28.862 INFO  BaseTest - Open Home page
+2024-02-11 11:11:28.863 INFO  BaseTest - Testing....
+2024-02-11 11:11:31.429 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:11:35.604 INFO  BaseTest - ✅
+tests.HomeTest.testProductDisplayByCategory   ----   PASS	 Run Time: 0 min 6 sec 685 ms
+
+2024-02-11 11:11:35.611 INFO  BaseTest - Page closed.
+2024-02-11 11:11:35.870 INFO  BaseTest - Tracing stopped
+2024-02-11 11:11:35.874 INFO  BaseTest - Context closed.
+2024-02-11 11:11:36.044 INFO  BaseTest - Browser closed.
+2024-02-11 11:11:36.054 INFO  BaseTest - Playwright closed.
+2024-02-11 11:12:34.974 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:12:35.002 INFO  BaseTest - 
+==========================================================================================
+T E S T     R E P O R T
+Date: 2024-02-11, 11:12AM
+==========================================================================================
+
+2024-02-11 11:12:35.002 INFO  BaseTest - Playwright created.
+2024-02-11 11:12:35.002 INFO  BaseTest - Browser CHROMIUM BrowserImpl@21680803 launched.
+
+2024-02-11 11:12:35.027 INFO  BaseTest - RUN tests.APITest.testProductDisplayByCategoryAPI
+2024-02-11 11:12:35.044 INFO  BaseTest - Context created.
+2024-02-11 11:12:35.049 INFO  BaseTest - Tracing started
+2024-02-11 11:12:35.223 INFO  BaseTest - Page created.
+2024-02-11 11:12:35.803 INFO  BaseTest - Open Home page
+2024-02-11 11:12:35.804 INFO  BaseTest - Testing....
+2024-02-11 11:12:37.902 INFO  BaseTest - Login context: Login successful.
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-02-11 11:12:37.917 INFO  BaseTest - Open Home page
+2024-02-11 11:12:37.917 INFO  BaseTest - Testing....
+2024-02-11 11:12:38.478 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:12:38.494 INFO  BaseTest - ✅
+tests.APITest.testProductDisplayByCategoryAPI   ----   PASS	 Run Time: 0 min 0 sec 513 ms
+
+2024-02-11 11:12:38.500 INFO  BaseTest - Page closed.
+2024-02-11 11:12:38.660 INFO  BaseTest - Tracing stopped
+2024-02-11 11:12:38.666 INFO  BaseTest - Context closed.
+2024-02-11 11:12:38.871 INFO  BaseTest - Browser closed.
+2024-02-11 11:12:38.898 INFO  BaseTest - Playwright closed.
+2024-02-11 11:13:29.275 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:13:33.631 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:17:53.347 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:20:11.214 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:20:15.964 INFO  BaseTest - API: 'Log in' status 200
+2024-02-11 11:20:16.092 INFO  BaseTest - API: 'Check' status 200
+2024-02-11 11:36:40.540 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:36:44.795 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:36:44.922 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:36:45.041 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:38:26.458 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+2024-02-11 11:38:30.594 INFO  BaseTest - API: 'Log in' status 200
+2024-02-11 11:38:30.703 INFO  BaseTest - API: 'Check' status 200
+2024-02-11 11:38:30.866 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:38:30.987 INFO  BaseTest - API: 'Category' status 200
+2024-02-11 11:38:31.110 INFO  BaseTest - API: 'Category' status 200
+=======
 2024-02-10 14:27:13.082 INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\laysa\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
@@ -1312,3 +2083,4 @@ tests.HomeTest.testPurchaseWithCartValidationE2E   ----   PASS	 Run Time: 0 min 
 2024-02-10 17:10:28.418 INFO  LoginBaseTest - Context closed.
 2024-02-10 17:10:28.589 INFO  LoginBaseTest - Browser closed.
 2024-02-10 17:10:28.601 INFO  LoginBaseTest - Playwright closed.
+

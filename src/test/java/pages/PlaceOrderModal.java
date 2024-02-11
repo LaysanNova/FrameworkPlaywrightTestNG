@@ -69,9 +69,10 @@ public class PlaceOrderModal extends FormPage<PlaceOrderModal> {
     }
 
     @Step("Click 'Purchase' button.")
-    public SuccessModal clickPurchaseButton() {
+    public ConfirmationModal clickPurchaseButton() {
         purchaseButton.click();
 
-        return new SuccessModal(getPage());
+        return new ConfirmationModal(getPage());
     }
 }
+

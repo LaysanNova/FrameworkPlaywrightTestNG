@@ -38,4 +38,17 @@ public class APIServices {
                                 .setData(data)
                 );
     }
+
+    public static APIResponse postProducts(String cat) {
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("cat", cat);
+
+        return playwright.request().newContext()
+                .post(
+                        ProjectProperties.API_BASE_URL + APIData.CATEGORY,
+                        RequestOptions.create()
+                                .setData(data)
+                );
+    }
 }

@@ -37,6 +37,7 @@ build/
 ### Mac OS ###
 .DS_Store
 
+logs/
 config.properties
 # Allure Report
 allure-results/
