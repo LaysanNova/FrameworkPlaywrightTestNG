@@ -22,6 +22,7 @@ public class HomePage extends Footer<HomePage> implements IRandom{
         super(page);
     }
 
+    @Step("Click 'Phones' Category.")
     public HomePage clickPhonesCategory() {
         phonesCategory.click();
         getPage().waitForLoadState();
@@ -29,15 +30,31 @@ public class HomePage extends Footer<HomePage> implements IRandom{
         return this;
     }
 
-    @Step("Click random Category.")
-    public HomePage clickRandomCategory() {
-        randomCategory.click();
-        getPage().waitForLoadState();
+    @Step("Click 'Laptops' Category.")
+    public HomePage clickLaptopsCategory() {
+        laptopsCategory.click();
 
         return this;
     }
 
-    private List<Locator> getProductsListOfCategory() {
+    @Step("Click 'Monitors' Category.")
+    public HomePage clickMonitorsCategory() {
+        monitorsCategory.click();
+
+        return this;
+    }
+
+    @Step("Click random Category.")
+    public HomePage clickRandomCategory() {
+        randomCategory.click();
+
+        return this;
+    }
+
+    @Step("Get Products List displayed on the page.")
+    public List<Locator> getProductsListOfCategory() {
+
+        getPage().waitForTimeout(2000);
 
         return allElements("#tbodyid > div");
     }

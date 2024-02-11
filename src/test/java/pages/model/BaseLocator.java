@@ -3,6 +3,7 @@ package pages.model;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 import java.util.List;
@@ -100,7 +101,6 @@ abstract class BaseLocator<TPage> {
 
         return getPage().locator(css);
     }
-
 
     private List<Locator> getList(Locator locator) {
         while (!locator.first().isVisible() && !locator.last().isVisible()) {

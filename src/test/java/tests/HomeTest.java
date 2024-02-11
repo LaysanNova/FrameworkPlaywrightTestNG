@@ -9,6 +9,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.helpers.TestData;
+import utils.api.APIUtils;
+
+import java.util.List;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static tests.helpers.TestUtils.extractPrice;
@@ -69,7 +72,7 @@ public class HomeTest extends BaseTest implements IRandom {
         Allure.step("Assert that price of product equals to total on order.");
         Assert.assertEquals(total, totalOnPlaceOrder);
 
-        SuccessModal successModal =
+        ConfirmationModal successModal =
                 placeOrderModal
                         .enterName()
                         .enterCountry()
@@ -122,4 +125,50 @@ public class HomeTest extends BaseTest implements IRandom {
 
 //        getPage().waitForTimeout(10000);
     }
+
+    @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display")
+    @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
+    @Severity(SeverityLevel.NORMAL)
+    public void testProductDisplayByCategory() {
+
+        List<Locator> phones =
+                new HomePage(getPage())
+                        .clickPhonesCategory()
+                        .getProductsListOfCategory();
+
+        APIUtils.getProductByCategory("phone");
+
+        System.out.println(phones);
+        System.out.println(phones.size());
+
+        List<Locator> laptops =
+                new HomePage(getPage())
+                        .clickLaptopsCategory()
+                        .getProductsListOfCategory();
+
+        System.out.println(laptops);
+        System.out.println(laptops.size());
+
+        List<Locator> monitors =
+                new HomePage(getPage())
+                        .clickMonitorsCategory()
+                        .getProductsListOfCategory();
+
+        System.out.println(monitors);
+        System.out.println(monitors.size());
+
+    }
+
+
+
+
+
+//        Navigate to the homepage of the application.
+//                Identify and click on a specific category from the category menu.
+//        Ensure that the category page loads correctly.
+//                Verify that products relevant to the selected category are displayed.
+//                Click on multiple categories to test navigation across different categories.
+//                Confirm that products change dynamically based on the selected category.
+//                Repeat steps 2-6 for each category available in the application.
+
 }

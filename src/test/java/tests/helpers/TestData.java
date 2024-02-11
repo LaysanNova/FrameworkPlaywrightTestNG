@@ -1,8 +1,6 @@
 package tests.helpers;
 
 import org.testng.annotations.DataProvider;
-import pages.HomePage;
-import utils.runner.ProjectProperties;
 
 public final class TestData {
     public static final String BASE_URL = "https://www.demoblaze.com";
@@ -62,4 +60,5 @@ public final class TestData {
                 {"Sign up", TITLE_SIGNUP}
         };
     }
+
 }

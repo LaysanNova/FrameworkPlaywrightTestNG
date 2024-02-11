@@ -6,14 +6,14 @@ import io.qameta.allure.Step;
 import pages.model.FormPage;
 import tests.helpers.TestData;
 
-public class SuccessModal extends FormPage<SuccessModal> {
+public class ConfirmationModal extends FormPage<ConfirmationModal> {
 
     private final Locator okButton = button("OK");
     private final Locator successMessage = heading(TestData.successMessage);
 //    private final Locator purchaseData = locator("p");
     private final Locator successSymbol = locator(".sa-success");
 
-    public SuccessModal(Page page) {
+    public ConfirmationModal(Page page) {
         super(page);
     }
 
