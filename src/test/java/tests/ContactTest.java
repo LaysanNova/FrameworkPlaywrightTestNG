@@ -9,12 +9,9 @@ import pages.HomePage;
 import tests.helpers.TestData;
 import tests.helpers.TestUtils;
 
-import java.util.Arrays;
-
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class ContactTest extends BaseTest{
-
     @Test
     public void testContactPopUp() {
 

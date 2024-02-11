@@ -2,7 +2,6 @@ package pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.WaitForSelectorState;
 import io.qameta.allure.Step;
 import pages.model.Footer;
 
@@ -15,10 +14,8 @@ public class HomePage extends Footer<HomePage> implements IRandom{
     private final Locator phonesCategory = link("Phones");
     private final Locator laptopsCategory = link("Laptops");
     private final Locator monitorsCategory = link("Monitors");
-    private Locator product;
-
-    private final List<Locator> allProductsCars = allProducts("#tbodyid > div");
-    private final Locator randomProduct = getRandomValue(allProductsCars);
+    private final Locator previousButton = locator("button[id='prev2']");
+    private final Locator nextButton = locator("button[id='next2']");
 
     public HomePage(Page page) {
 
@@ -27,29 +24,38 @@ public class HomePage extends Footer<HomePage> implements IRandom{
 
     public HomePage clickPhonesCategory() {
         phonesCategory.click();
+        getPage().waitForLoadState();
 
         return this;
-    }
-
-    @Step("Click random ProductTitle.")
-    public ProdPage clickRandomProductTitle() {
-        getTitle().click();
-
-        return new ProdPage(getPage());
     }
 
     @Step("Click random Category.")
     public HomePage clickRandomCategory() {
         randomCategory.click();
+        getPage().waitForLoadState();
 
         return this;
     }
 
-    public Locator getTitle() {
+    private List<Locator> getProductsListOfCategory() {
 
-        return randomProduct.locator("h4.card-title > a");
+        return allElements("#tbodyid > div");
     }
 
+    public Locator getRandomProduct() {
+        List<Locator> allProducts = getProductsListOfCategory();
+
+        return getRandomValue(allProducts);
+    }
+
+    @Step("Click random product.")
+    public ProdPage clickRandomProduct() {
+
+        Locator randomProduct = getRandomProduct();
+        randomProduct.locator("h4.card-title > a").click();
+
+        return new ProdPage(getPage());
+    }
 }
 
 

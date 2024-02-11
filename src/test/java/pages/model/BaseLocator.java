@@ -113,7 +113,7 @@ abstract class BaseLocator<TPage> {
         return locator.all();
     }
 
-    protected List<Locator> allProducts(String css) {
+    protected List<Locator> allElements(String css) {
 
         return getList(locator(css));
     }

@@ -24,6 +24,14 @@ public final class TestData {
     public static final String[] contactModalBody = {"Contact Email:", "Contact Name:", "Message:"};
     public static final String[] contactModalFooter = {"Close", "Send message"};
 
+    public static final String NAME = "Name";
+    public static final String COUNTRY = "Country";
+    public static final String CITY = "City";
+    public static final String CREDIT_CARD = "0000000000000";
+    public static final String MONTH = "Month";
+    public static final String YEAR = "Year";
+    public static final String successMessage = "Thank you for your purchase!";
+
     @DataProvider
     public static Object[][] menuItemsLoggedIn() {
         return new Object[][]{

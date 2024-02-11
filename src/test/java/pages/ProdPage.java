@@ -10,7 +10,8 @@ import tests.BaseTest;
 
 public class ProdPage extends Footer<ProdPage> {
 
-    Locator addToCartButton =  link("Add to cart");
+    final Locator addToCartButton =  link("Add to cart");
+    final Locator _$price =  locator("h3.price-container");
 
     protected ProdPage(Page page) {
         super(page);
@@ -23,10 +24,7 @@ public class ProdPage extends Footer<ProdPage> {
         return this;
     }
 
-    @Step("Click 'Yes' Product added")
-    public ProdPage clickOk() {
-        getPage().onDialog(Dialog::accept);
-
-        return this;
+    public Locator get_$price() {
+        return _$price;
     }
 }

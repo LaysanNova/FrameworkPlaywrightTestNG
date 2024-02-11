@@ -2,13 +2,10 @@ package pages.model;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.testng.Assert;
 
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
-public abstract class FormPage<TPage> extends BaseLocator<TPage> {
+public abstract class FormPage<TPage> extends PopDialog<TPage> {
 
     private final Locator modalTitle = locator("h5#exampleModalLabel");
     private final Locator modalHeader = locator("div.modal-header");
