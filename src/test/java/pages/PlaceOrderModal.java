@@ -75,3 +75,4 @@ public class PlaceOrderModal extends FormPage<PlaceOrderModal> {
         return new ConfirmationModal(getPage());
     }
 }
+

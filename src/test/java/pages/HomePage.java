@@ -74,6 +74,3 @@ public class HomePage extends Footer<HomePage> implements IRandom{
         return new ProdPage(getPage());
     }
 }
-
-
-// file:///C:/Users/laysa/OneDrive/Desktop/QA%20Books/Checklist_for_Testing_of_web_Application_1684852084.pdf

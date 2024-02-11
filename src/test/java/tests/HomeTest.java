@@ -91,39 +91,6 @@ public class HomeTest extends BaseTest implements IRandom {
         Allure.step("Assert that message has success sign.");
         assertThat(successSymbol).isVisible();
 
-
-//        Preconditions:
-//        User must have a registered account on the e-commerce platform.
-//                User must be logged in to the account.
-//                The desired product(s) must be available for purchase and added to the shopping cart.
-//                Payment methods must be set up and valid.
-//                Test Steps:
-//
-//        Navigate to the e-commerce application's homepage.
-//        Log in to the user account with valid credentials.
-//                Search for the desired product using the search functionality.
-//                Select the desired product from the search results.
-//                Verify that the product details (name, price, quantity, etc.) are displayed correctly.
-//                Click on the "Add to Cart" button.
-//                Navigate to the shopping cart page and verify that the added product is displayed in the cart.
-//        Proceed to checkout.
-//                Verify that the correct shipping address is pre-filled (if applicable) or enter a new shipping address.
-//                Select the desired shipping method.
-//        Verify that the shipping cost is calculated correctly.
-//        Proceed to the payment section.
-//                Select a valid payment method (e.g., credit card, PayPal).
-//        Enter valid payment details (e.g., credit card information).
-//        Verify that the total order amount is calculated correctly including taxes and shipping costs.
-//        Place the order by clicking on the "Place Order" button.
-//                Verify that the order confirmation page is displayed.
-//                Verify that the order summary (product details, shipping address, payment method) is correct.
-//        Verify that an order confirmation email is sent to the user's registered email address.
-//        Verify that the order status is updated to "Processing" or "Confirmed" in the user's account dashboard.
-//        Optionally, verify that the inventory level of the purchased product is updated correctly.
-//                Optionally, verify that the payment transaction is processed successfully.
-
-
-//        getPage().waitForTimeout(10000);
     }
 
     @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display")
@@ -158,17 +125,4 @@ public class HomeTest extends BaseTest implements IRandom {
         System.out.println(monitors.size());
 
     }
-
-
-
-
-
-//        Navigate to the homepage of the application.
-//                Identify and click on a specific category from the category menu.
-//        Ensure that the category page loads correctly.
-//                Verify that products relevant to the selected category are displayed.
-//                Click on multiple categories to test navigation across different categories.
-//                Confirm that products change dynamically based on the selected category.
-//                Repeat steps 2-6 for each category available in the application.
-
-}
+}    
