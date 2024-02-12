@@ -10,7 +10,6 @@ public class ConfirmationModal extends FormPage<ConfirmationModal> {
 
     private final Locator okButton = button("OK");
     private final Locator successMessage = heading(TestData.successMessage);
-//    private final Locator purchaseData = locator("p");
     private final Locator successSymbol = locator(".sa-success");
 
     public ConfirmationModal(Page page) {
@@ -26,14 +25,12 @@ public class ConfirmationModal extends FormPage<ConfirmationModal> {
 
     @Step("Get success message of purchase.")
     public Locator getSuccessMessage() {
+
         return successMessage;
     }
 
-//    public String getPurchaseData() {
-//        return purchaseData.innerText();
-//    }
-
     public Locator getSuccessSymbol() {
+
         return successSymbol;
     }
 }
