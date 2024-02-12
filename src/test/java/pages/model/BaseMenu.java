@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import pages.*;
 import pages.model.BaseLocator;
 
-abstract class BaseMenu<TPage> extends PopDialog<TPage> {
+public abstract class BaseMenu extends PopDialog {
 
     private final Locator logo = image("PRODUCT STORE");
     private final Locator homeItem = link("Home");
@@ -18,7 +18,7 @@ abstract class BaseMenu<TPage> extends PopDialog<TPage> {
     private final Locator logOutItem = link("Log out");
     private final Locator welcomeMessage = link("Welcome");
 
-    BaseMenu(Page page) {
+    protected BaseMenu(Page page) {
         super(page);
     }
 

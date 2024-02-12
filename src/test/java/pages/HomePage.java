@@ -3,11 +3,11 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import pages.model.Footer;
+import pages.model.BaseMenu;
 
 import java.util.List;
 
-public class HomePage extends Footer<HomePage> implements IRandom{
+public class HomePage extends BaseMenu implements IRandom{
 
     private final  List<Locator> allCategories = locator("#itemc").all();
     private final Locator randomCategory = getRandomValue(allCategories);

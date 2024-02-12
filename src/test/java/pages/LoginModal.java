@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import pages.model.FormPage;
 
-public class LoginModal extends FormPage<LoginModal> {
+public class LoginModal extends FormPage {
 
     private final Locator inputUserName = locator("input[id='loginusername']");
     private final Locator inputPassword = locator("input[id='loginpassword']");

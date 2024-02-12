@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import pages.model.FormPage;
 import tests.helpers.TestData;
 
-public class SuccessModal extends FormPage<SuccessModal> {
+public class SuccessModal extends FormPage {
 
     private final Locator okButton = button("OK");
     private final Locator successMessage = heading(TestData.successMessage);

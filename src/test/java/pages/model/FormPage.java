@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.testng.Assert;
 
-public abstract class FormPage<TPage> extends PopDialog<TPage> {
+public abstract class FormPage extends PopDialog {
 
     private final Locator modalTitle = locator("h5#exampleModalLabel");
     private final Locator modalHeader = locator("div.modal-header");
@@ -43,16 +43,16 @@ public abstract class FormPage<TPage> extends PopDialog<TPage> {
         return dialog;
     }
 
-    @Step("Verifying message from alert dialog.")
-    public TPage verifyAlertMessage(String message) {
-
-        getPage().onceDialog(dialog -> {
-            String actualMessage = dialog.message();
-            Assert.assertTrue(actualMessage.contains(message),
-                    "If FAIL: Alert message expected to be: " + message + " but " + actualMessage + ".");
-            dialog.dismiss();
-        });
-
-        return (TPage) this;
-    }
+//    @Step("Verifying message from alert dialog.")
+//    public TPage verifyAlertMessage(String message) {
+//
+//        getPage().onceDialog(dialog -> {
+//            String actualMessage = dialog.message();
+//            Assert.assertTrue(actualMessage.contains(message),
+//                    "If FAIL: Alert message expected to be: " + message + " but " + actualMessage + ".");
+//            dialog.dismiss();
+//        });
+//
+//        return (TPage) this;
+//    }
 }

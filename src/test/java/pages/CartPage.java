@@ -3,11 +3,11 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import pages.model.Footer;
+import pages.model.BaseMenu;
 
 import java.util.List;
 
-public class CartPage extends Footer<CartPage> {
+public class CartPage extends BaseMenu {
 
     private final List<Locator> products = allElements("#tbodyid > tr");
     private final Locator placeOrderButton = button("Place Order");

@@ -1,5 +1,5 @@
-//package tests;
-//
-//public class CartTest extends BaseTest {
-//
-//}
+package tests;
+
+public class CartTest extends BaseTest {
+
+}
