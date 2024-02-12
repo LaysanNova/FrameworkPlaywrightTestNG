@@ -2,6 +2,9 @@ package tests;
 
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ContactModal;
@@ -12,7 +15,9 @@ import tests.helpers.TestUtils;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class ContactTest extends BaseTest{
-    @Test
+    @Test(testName = "TC.XXX.XX: Contact Us Functionality.")
+    @Description("Verify that all fields are clear and accessible for user input.")
+    @Severity(SeverityLevel.NORMAL)
     public void testContactPopUp() {
 
         ContactModal contactModal = new HomePage(getPage())

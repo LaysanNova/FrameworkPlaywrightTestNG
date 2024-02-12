@@ -34,29 +34,6 @@ public class APIUtils {
         return object;
     }
 
-    private static void checkLoginResponse(JsonObject loginResponse) {
-
-        try {
-            JsonObject item = loginResponse.getAsJsonObject("Item");
-            String token = item.get("token").getAsString();
-            String expiration = item.get("expiration").getAsString();
-            String username = item.get("username").getAsString();
-
-            if (token.isEmpty() || expiration.isEmpty() || username.isEmpty()) {
-                LoggerUtils.logException("API: ERROR: LOGIN"+
-                        "\ntoken is empty = " + token.isEmpty() +
-                        "\nexpiration is empty = " + expiration.isEmpty() +
-                        "\nusername is empty = " + username.isEmpty()
-                );
-                Assert.fail();
-            }
-
-        } catch (Exception e) {
-            LoggerUtils.logException("API: EXCEPTION: FAILED to extract token, expiration, username");
-            Assert.fail();
-        }
-    }
-
     public static void check(String authToken) {
 
         final APIResponse apiResponse = APIServices.check(authToken);
@@ -84,6 +61,29 @@ public class APIUtils {
         }
     }
 
+    private static void checkLoginResponse(JsonObject loginResponse) {
+
+        try {
+            JsonObject item = loginResponse.getAsJsonObject("Item");
+            String token = item.get("token").getAsString();
+            String expiration = item.get("expiration").getAsString();
+            String username = item.get("username").getAsString();
+
+            if (token.isEmpty() || expiration.isEmpty() || username.isEmpty()) {
+                LoggerUtils.logException("API: ERROR: LOGIN"+
+                        "\ntoken is empty = " + token.isEmpty() +
+                        "\nexpiration is empty = " + expiration.isEmpty() +
+                        "\nusername is empty = " + username.isEmpty()
+                );
+                Assert.fail();
+            }
+
+        } catch (Exception e) {
+            LoggerUtils.logException("API: EXCEPTION: FAILED to extract token, expiration, username");
+            Assert.fail();
+        }
+    }
+
     public static JsonArray getProductByCategory(String cat) {
 
         JsonArray jsonArray = new JsonArray();
@@ -103,5 +103,16 @@ public class APIUtils {
         }
 
         return jsonArray;
+    }
+
+    public static JsonObject getProducts() {
+
+        final APIResponse apiResponse = APIServices.getEntriesProducts();
+
+        checkStatus(apiResponse, "Entries");
+
+        final JsonObject jsResponse = initJsonObject(apiResponse.text());
+
+        return jsResponse;
     }
 }
