@@ -15,15 +15,15 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public class LoginTest extends LoginBaseTest {
 
-    @Test(
-            testName = "TC.XXX.XX: Verify Login Functionality",
-            dataProvider = "loginParameters", dataProviderClass = LoginData.class,
-            groups = "login"
-    )
-    @Description("Test Login Functionality: Including valid and invalid credentials")
-    @Parameters({"menuName", "expectedEndPoint"})
-    @Severity(SeverityLevel.CRITICAL)
-    public void testLogin(boolean successful, String userName, String password, String message) {
+//    @Test(
+//            testName = "TC.XXX.XX: Verify Login Functionality",
+//            dataProvider = "loginParameters", dataProviderClass = LoginData.class,
+//            groups = "login"
+//    )
+//    @Description("Test Login Functionality: Including valid and invalid credentials")
+//    @Parameters({"menuName", "expectedEndPoint"})
+//    @Severity(SeverityLevel.CRITICAL)
+//    public void testLogin(boolean successful, String userName, String password, String message) {
 
 //        HomePage homePage = new HomePage(getPage());
 //
@@ -63,5 +63,5 @@ public class LoginTest extends LoginBaseTest {
 //            Allure.step("Assertion: 'Log in' menu is visible.");
 //            assertThat(login).isVisible();
 //        }
-    }
+//    }
 }

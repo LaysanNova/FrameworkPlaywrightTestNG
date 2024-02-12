@@ -40,10 +40,10 @@ public class HomeTest extends BaseTest implements IRandom {
 //        assertThat(login).isVisible();
 //    }
 
-    @Test(testName = "TC.XXX.XX: Seamless Purchase Journey Validation")
-    @Description("Objective: To validate the entire purchase process.")
-    @Severity(SeverityLevel.CRITICAL)
-    public void testPurchaseWithCartValidationE2E() {
+//    @Test(testName = "TC.XXX.XX: Seamless Purchase Journey Validation")
+//    @Description("Objective: To validate the entire purchase process.")
+//    @Severity(SeverityLevel.CRITICAL)
+//    public void testPurchaseWithCartValidationE2E() {
 
 //        ProdPage prodPage =
 //                new HomePage(getPage())
@@ -90,8 +90,8 @@ public class HomeTest extends BaseTest implements IRandom {
 //
 //        Allure.step("Assert that message has success sign.");
 //        assertThat(successSymbol).isVisible();
-
-    }
+//
+//    }
 
     @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display with API")
     @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
