@@ -105,7 +105,9 @@ public class APIUtils {
         return jsonArray;
     }
 
-    public static JsonObject getProducts() {
+    public static JsonArray getProducts() {
+
+        JsonArray jsonArray = new JsonArray();
 
         final APIResponse apiResponse = APIServices.getEntriesProducts();
 
@@ -113,6 +115,14 @@ public class APIUtils {
 
         final JsonObject jsResponse = initJsonObject(apiResponse.text());
 
-        return jsResponse;
+        try {
+            jsonArray =  jsResponse.getAsJsonArray("Items");
+
+        } catch (Exception e) {
+
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get entry products.");
+        }
+
+        return jsonArray;
     }
 }

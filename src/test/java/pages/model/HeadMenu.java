@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import pages.*;
 
-public abstract class BaseMenu<TPage> extends PopDialog<TPage> {
+public abstract class HeadMenu<TPage> extends PopDialog<TPage> {
 
     private final Locator logo = image("PRODUCT STORE");
     private final Locator homeItem = link("Home");
@@ -17,7 +17,8 @@ public abstract class BaseMenu<TPage> extends PopDialog<TPage> {
     private final Locator logOutItem = link("Log out");
     private final Locator welcomeMessage = link("Welcome");
 
-    protected BaseMenu(Page page) {
+    protected HeadMenu(Page page) {
+
         super(page);
     }
 

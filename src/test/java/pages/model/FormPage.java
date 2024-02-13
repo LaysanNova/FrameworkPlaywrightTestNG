@@ -2,8 +2,6 @@ package pages.model;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import io.qameta.allure.Step;
-import org.testng.Assert;
 
 public abstract class FormPage<TPage> extends PopDialog<TPage> {
 

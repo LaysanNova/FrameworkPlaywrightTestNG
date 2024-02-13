@@ -1,7 +1,5 @@
 package pages;
 
-import com.microsoft.playwright.Locator;
-
 import java.util.List;
 import java.util.Random;
 

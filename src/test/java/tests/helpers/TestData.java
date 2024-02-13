@@ -1,6 +1,7 @@
 package tests.helpers;
 
 import org.testng.annotations.DataProvider;
+import utils.api.APIData;
 
 public final class TestData {
     public static final String BASE_URL = "https://www.demoblaze.com";
@@ -58,6 +59,15 @@ public final class TestData {
                 {"About us", TITLE_ABOUT_US},
                 {"Log in", TITLE_LOGIN},
                 {"Sign up", TITLE_SIGNUP}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] category() {
+        return new Object[][]{
+                {"Phones", APIData.PHONES},
+                {"Laptops", APIData.LAPTOPS},
+                {"Monitors", APIData.MONITORS},
         };
     }
 

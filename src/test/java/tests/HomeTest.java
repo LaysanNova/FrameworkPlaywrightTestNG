@@ -1,6 +1,6 @@
 package tests;
 
-import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
@@ -11,7 +11,10 @@ import org.testng.annotations.Test;
 import pages.*;
 import tests.helpers.TestData;
 
+import tests.helpers.TestUtils;
+
 import java.util.List;
+import java.util.Map;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static tests.helpers.TestUtils.extractPrice;
@@ -93,55 +96,39 @@ public class HomeTest extends BaseTest implements IRandom {
 
     }
 
-    @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display with API")
+    @Test(
+            testName = "TC.XXX.XX: Category Navigation - Verify Product Display matches to API",
+            dataProvider = "category", dataProviderClass = TestData.class
+    )
     @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
     @Severity(SeverityLevel.NORMAL)
-    public void testProductDisplayByCategory() {
+    public void testProductDisplayByCategory(String category, String cat) {
 
         List<Locator> phones =
                 new HomePage(getPage())
-                        .clickPhonesCategory()
+                        .clickCategory(category)
                         .getProductsListOfCategory();
+
+        JsonArray phonesAPI = utils.api.APIUtils.getProductByCategory(cat);
+        int id = 0;
 
         for (Locator phone : phones) {
 
-//            String[] phoneData = get
+            Map<String, String> phoneData = TestUtils.getData(phone);
 
-            System.out.println(phone.innerText());
+            Allure.step("Assert that price matches to backend.");
+            Assert.assertEquals(TestUtils.convertToNumber(phoneData.get("price")), TestUtils.convertToNumber(phonesAPI.get(id).getAsJsonObject().get("price").getAsString()));
 
+            Allure.step("Assert that desc matches to backend.");
+            //Assert.assertEquals(phoneData.get("desc"), TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("desc")));
+
+            Allure.step("Assert that title matches to backend.");
+            Assert.assertEquals(phoneData.get("title"), TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("title")));
+
+            Allure.step("Assert that img matches to backend.");
+            Assert.assertEquals(phoneData.get("img"), phonesAPI.get(id).getAsJsonObject().get("img").getAsString());
+
+            id ++;
         }
-
-        JsonObject products = utils.api.APIUtils.getProducts();
-        System.out.println(products);
-
-//        System.out.println(phones);
-//
-//
-//        JsonArray products = utils.api.APIUtils.getProductByCategory(APIData.PHONES);
-//        System.out.println(products);
-
-
-
-
-
-//        System.out.println(phones);
-//        System.out.println(phones.size());
-//
-//        List<Locator> laptops =
-//                new HomePage(getPage())
-//                        .clickLaptopsCategory()
-//                        .getProductsListOfCategory();
-//
-//        System.out.println(laptops);
-//        System.out.println(laptops.size());
-//
-//        List<Locator> monitors =
-//                new HomePage(getPage())
-//                        .clickMonitorsCategory()
-//                        .getProductsListOfCategory();
-//
-//        System.out.println(monitors);
-//        System.out.println(monitors.size());
-
     }
 }

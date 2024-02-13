@@ -15,6 +15,6 @@ public abstract class PopDialog<TPage> extends BaseLocator {
     public TPage clickOk() {
         getPage().onDialog(Dialog::accept);
 
-        return (TPage) this;
+        return (TPage)this;
     }
 }
