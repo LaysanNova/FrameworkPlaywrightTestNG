@@ -51,4 +51,18 @@ public class APIServices {
                                 .setData(data)
                 );
     }
+
+    public static APIResponse getEntriesProducts() {
+
+        Map<String, Object> data = new HashMap<>();
+
+        return playwright.request().newContext()
+                .get(
+                        ProjectProperties.API_BASE_URL + APIData.ENTRIES,
+                        RequestOptions.create()
+                );
+
+    }
+
+
 }

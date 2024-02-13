@@ -1,4 +1,4 @@
-package tests.Login;
+package tests;
 
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
@@ -9,6 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginModal;
+import tests.Login.LoginData;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 

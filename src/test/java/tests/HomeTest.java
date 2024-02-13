@@ -1,5 +1,6 @@
 package tests;
 
+import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
@@ -9,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.helpers.TestData;
-import utils.api.APIUtils;
 
 import java.util.List;
 
@@ -46,7 +46,7 @@ public class HomeTest extends BaseTest implements IRandom {
     public void testPurchaseWithCartValidationE2E() {
 
         ProdPage prodPage =
-                new HomePage(getPage())
+                (ProdPage) new HomePage(getPage())
                         .clickRandomCategory()
                         .clickRandomProduct()
                         .clickAddToCartButton()
@@ -93,7 +93,7 @@ public class HomeTest extends BaseTest implements IRandom {
 
     }
 
-    @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display")
+    @Test(testName = "TC.XXX.XX: Category Navigation - Verify Product Display with API")
     @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
     @Severity(SeverityLevel.NORMAL)
     public void testProductDisplayByCategory() {
@@ -103,26 +103,45 @@ public class HomeTest extends BaseTest implements IRandom {
                         .clickPhonesCategory()
                         .getProductsListOfCategory();
 
-        APIUtils.getProductByCategory("phone");
+        for (Locator phone : phones) {
 
-        System.out.println(phones);
-        System.out.println(phones.size());
+//            String[] phoneData = get
 
-        List<Locator> laptops =
-                new HomePage(getPage())
-                        .clickLaptopsCategory()
-                        .getProductsListOfCategory();
+            System.out.println(phone.innerText());
 
-        System.out.println(laptops);
-        System.out.println(laptops.size());
+        }
 
-        List<Locator> monitors =
-                new HomePage(getPage())
-                        .clickMonitorsCategory()
-                        .getProductsListOfCategory();
+        JsonObject products = utils.api.APIUtils.getProducts();
+        System.out.println(products);
 
-        System.out.println(monitors);
-        System.out.println(monitors.size());
+//        System.out.println(phones);
+//
+//
+//        JsonArray products = utils.api.APIUtils.getProductByCategory(APIData.PHONES);
+//        System.out.println(products);
+
+
+
+
+
+//        System.out.println(phones);
+//        System.out.println(phones.size());
+//
+//        List<Locator> laptops =
+//                new HomePage(getPage())
+//                        .clickLaptopsCategory()
+//                        .getProductsListOfCategory();
+//
+//        System.out.println(laptops);
+//        System.out.println(laptops.size());
+//
+//        List<Locator> monitors =
+//                new HomePage(getPage())
+//                        .clickMonitorsCategory()
+//                        .getProductsListOfCategory();
+//
+//        System.out.println(monitors);
+//        System.out.println(monitors.size());
 
     }
-}    
+}

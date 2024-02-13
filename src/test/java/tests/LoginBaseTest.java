@@ -1,4 +1,4 @@
-package tests.Login;
+package tests;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
@@ -126,7 +126,7 @@ public abstract class LoginBaseTest {
         return !getPage().content().isEmpty();
     }
 
-    Page getPage() {
+    protected Page getPage() {
         return page;
     }
 }
