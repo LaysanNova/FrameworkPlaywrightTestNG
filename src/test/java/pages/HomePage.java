@@ -3,11 +3,12 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import pages.model.BaseMenu;
+import pages.model.Footer;
+import pages.model.HeadMenu;
 
 import java.util.List;
 
-public class HomePage extends BaseMenu<HomePage> implements IRandom{
+public class HomePage extends HeadMenu<HomePage> implements IRandom{
 
     private final  List<Locator> allCategories = locator("#itemc").all();
     private final Locator randomCategory = getRandomValue(allCategories);
@@ -16,6 +17,7 @@ public class HomePage extends BaseMenu<HomePage> implements IRandom{
     private final Locator monitorsCategory = link("Monitors");
     private final Locator previousButton = locator("button[id='prev2']");
     private final Locator nextButton = locator("button[id='next2']");
+    private final Footer footer = new Footer();
 
     public HomePage(Page page) {
 
@@ -40,6 +42,17 @@ public class HomePage extends BaseMenu<HomePage> implements IRandom{
     @Step("Click 'Monitors' Category.")
     public HomePage clickMonitorsCategory() {
         monitorsCategory.click();
+
+        return this;
+    }
+
+    public HomePage clickCategory(String category) {
+
+        switch (category) {
+            case "Phones" -> clickPhonesCategory();
+            case "Laptops" -> clickLaptopsCategory();
+            case "Monitors" -> clickMonitorsCategory();
+        }
 
         return this;
     }
