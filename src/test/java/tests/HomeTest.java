@@ -1,7 +1,6 @@
 package tests;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
@@ -11,8 +10,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.helpers.TestData;
+
 import tests.helpers.TestUtils;
-import utils.api.APIData;
 
 import java.util.List;
 import java.util.Map;
@@ -50,7 +49,7 @@ public class HomeTest extends BaseTest implements IRandom {
     public void testPurchaseWithCartValidationE2E() {
 
         ProdPage prodPage =
-                new HomePage(getPage())
+                (ProdPage) new HomePage(getPage())
                         .clickRandomCategory()
                         .clickRandomProduct()
                         .clickAddToCartButton()

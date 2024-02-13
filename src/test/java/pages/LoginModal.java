@@ -5,7 +5,6 @@ import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.testng.Assert;
 import pages.model.FormPage;
-import tests.helpers.TestData;
 
 public class LoginModal extends FormPage<LoginModal> {
 

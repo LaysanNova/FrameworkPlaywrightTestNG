@@ -14,7 +14,6 @@ public class CartPage extends HeadMenu<CartPage> {
     private final Locator total = locator("h3[id='totalp']");
 
     public CartPage(Page page) {
-
         super(page);
     }
 

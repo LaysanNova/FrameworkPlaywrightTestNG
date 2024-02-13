@@ -6,10 +6,8 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import io.qameta.allure.Allure;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
+
 import tests.helpers.TestData;
 import utils.reports.ReportUtils;
 import utils.reports.TracingUtils;

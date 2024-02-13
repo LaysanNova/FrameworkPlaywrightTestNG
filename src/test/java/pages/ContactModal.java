@@ -33,20 +33,8 @@ public class ContactModal extends FormPage<ContactModal> {
 
 
 
-
-//            page.getByText("Contact Email:").click();
-//            page.locator("#recipient-email").click();
-//            page.getByText("Contact Name:").click();
-//            page.getByLabel("Contact Email:").click();
-//            page.getByText("Message:").click();
-//            page.getByLabel("Message:").click();
-//            page.getByLabel("New message").getByText("Close").click();
-//            page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Contact")).click();
 //            page.onceDialog(dialog -> {
 //                System.out.println(String.format("Dialog message: %s", dialog.message()));
 //                dialog.dismiss();
 //            });
 //            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Send message")).click();
-//        }
-//    }
-//}

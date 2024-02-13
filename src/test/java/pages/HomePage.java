@@ -8,7 +8,7 @@ import pages.model.HeadMenu;
 
 import java.util.List;
 
-public class HomePage extends HeadMenu<HomePage> implements IRandom{
+public class HomePage extends HeadMenu<HomePage> implements IRandom {
 
     private final  List<Locator> allCategories = locator("#itemc").all();
     private final Locator randomCategory = getRandomValue(allCategories);
@@ -20,7 +20,6 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom{
     private final Footer footer = new Footer();
 
     public HomePage(Page page) {
-
         super(page);
     }
 

@@ -18,6 +18,7 @@ public abstract class HeadMenu<TPage> extends PopDialog<TPage> {
     private final Locator welcomeMessage = link("Welcome");
 
     protected HeadMenu(Page page) {
+
         super(page);
     }
 
