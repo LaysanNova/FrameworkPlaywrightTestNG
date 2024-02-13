@@ -3,7 +3,9 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
+import org.testng.Assert;
 import pages.model.FormPage;
+import tests.helpers.TestData;
 
 public class LoginModal extends FormPage<LoginModal> {
 
@@ -30,8 +32,22 @@ public class LoginModal extends FormPage<LoginModal> {
     }
 
     @Step("Click 'Log in' button.")
-    public void clickLoginButton() {
+    public HomePage clickLoginButton() {
 
         loginButton.click();
+        return new HomePage(getPage());
+    }
+
+    @Step("Verifying message from alert dialog.")
+    public LoginModal verifyAlertMessage(String message) {
+
+        getPage().onceDialog(dialog -> {
+            String actualMessage = dialog.message();
+            Assert.assertTrue(actualMessage.contains(message),
+                    "If FAIL: Alert message expected to be: " + message + " but " + actualMessage + ".");
+            dialog.dismiss();
+        });
+
+        return this;
     }
 }

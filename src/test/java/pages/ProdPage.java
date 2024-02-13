@@ -5,10 +5,11 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.testng.Assert;
-import pages.model.Footer;
+import pages.model.BaseMenu;
+
 import tests.BaseTest;
 
-public class ProdPage extends Footer<ProdPage> {
+public class ProdPage extends BaseMenu<ProdPage> {
 
     final Locator addToCartButton =  link("Add to cart");
     final Locator _$price =  locator("h3.price-container");

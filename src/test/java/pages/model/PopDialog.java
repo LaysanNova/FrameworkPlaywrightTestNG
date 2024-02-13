@@ -5,7 +5,7 @@ import com.microsoft.playwright.Dialog;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 
-public abstract class PopDialog<TPage> extends BaseLocator<TPage> {
+public abstract class PopDialog<TPage> extends BaseLocator {
 
     PopDialog(Page page) {
         super(page);

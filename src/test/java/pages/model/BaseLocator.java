@@ -8,7 +8,7 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 
 import java.util.List;
 
-abstract class BaseLocator<TPage> {
+abstract class BaseLocator {
 
     private final Page page;
 

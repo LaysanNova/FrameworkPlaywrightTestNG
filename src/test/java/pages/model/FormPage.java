@@ -43,16 +43,4 @@ public abstract class FormPage<TPage> extends PopDialog<TPage> {
         return dialog;
     }
 
-    @Step("Verifying message from alert dialog.")
-    public TPage verifyAlertMessage(String message) {
-
-        getPage().onceDialog(dialog -> {
-            String actualMessage = dialog.message();
-            Assert.assertTrue(actualMessage.contains(message),
-                    "If FAIL: Alert message expected to be: " + message + " but " + actualMessage + ".");
-            dialog.dismiss();
-        });
-
-        return (TPage) this;
-    }
 }
