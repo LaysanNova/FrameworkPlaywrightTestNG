@@ -4,9 +4,8 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import pages.*;
-import pages.model.BaseLocator;
 
-public abstract class BaseMenu extends PopDialog {
+public abstract class BaseMenu<TPage> extends PopDialog<TPage> {
 
     private final Locator logo = image("PRODUCT STORE");
     private final Locator homeItem = link("Home");

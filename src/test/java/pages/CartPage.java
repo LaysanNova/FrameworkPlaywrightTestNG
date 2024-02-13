@@ -7,7 +7,7 @@ import pages.model.BaseMenu;
 
 import java.util.List;
 
-public class CartPage extends BaseMenu {
+public class CartPage extends BaseMenu<CartPage> {
 
     private final List<Locator> products = allElements("#tbodyid > tr");
     private final Locator placeOrderButton = button("Place Order");

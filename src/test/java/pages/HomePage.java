@@ -7,7 +7,7 @@ import pages.model.BaseMenu;
 
 import java.util.List;
 
-public class HomePage extends BaseMenu implements IRandom{
+public class HomePage extends BaseMenu<HomePage> implements IRandom{
 
     private final  List<Locator> allCategories = locator("#itemc").all();
     private final Locator randomCategory = getRandomValue(allCategories);

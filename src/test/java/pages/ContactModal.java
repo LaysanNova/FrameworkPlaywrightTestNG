@@ -4,7 +4,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import pages.model.FormPage;
 
-public class ContactModal extends FormPage {
+public class ContactModal extends FormPage<ContactModal> {
 
     Locator contactEmailInput = label("Contact Email:");
     Locator contactNameInput = label("Contact Name:");

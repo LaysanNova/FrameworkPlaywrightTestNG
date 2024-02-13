@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import pages.model.FormPage;
 import tests.helpers.TestData;
 
-public class PlaceOrderModal extends FormPage {
+public class PlaceOrderModal extends FormPage<PlaceOrderModal> {
 
     private final Locator total = locator("form label[id='totalm']");
     private final Locator nameInput = locator("input[id='name']");

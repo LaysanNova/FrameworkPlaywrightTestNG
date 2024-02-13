@@ -9,7 +9,7 @@ import pages.model.BaseMenu;
 
 import tests.BaseTest;
 
-public class ProdPage extends BaseMenu {
+public class ProdPage extends BaseMenu<ProdPage> {
 
     final Locator addToCartButton =  link("Add to cart");
     final Locator _$price =  locator("h3.price-container");
