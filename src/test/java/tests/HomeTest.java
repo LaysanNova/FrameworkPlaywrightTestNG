@@ -1,9 +1,5 @@
 package tests;
 
-<<<<<<< HEAD
-import com.google.gson.JsonArray;
-=======
->>>>>>> bd8fe2dfbec5efc8c4a42dc14ba1e254dcdb23ac
 import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
@@ -14,11 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.helpers.TestData;
-<<<<<<< HEAD
-import utils.api.APIData;
-import utils.api.APIUtils;
-=======
->>>>>>> bd8fe2dfbec5efc8c4a42dc14ba1e254dcdb23ac
 
 import java.util.List;
 
