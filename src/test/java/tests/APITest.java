@@ -3,6 +3,7 @@ package tests;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -10,11 +11,18 @@ import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.ProdPage;
 import tests.helpers.TestData;
 import tests.helpers.TestUtils;
 import utils.api.APIData;
 
-public class APITest {
+import javax.swing.text.Utilities;
+import java.util.Map;
+
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
+public class APITest extends BaseTest {
 
     @Test(
             testName = "TC.XXX.XX: Verify Login Functionality with API",
@@ -72,5 +80,28 @@ public class APITest {
 
         Allure.step("Assert that 'lastEvaluatedKey' of next products is equal LastEvaluatedKey before + quantity of products.");
         Assert.assertEquals(TestData.maxProductsOnPage + nextItems.size(), TestUtils.convertToInt(lastEvaluatedKey));
+    }
+
+    @Test(testName = "TC.XXX.XX: Product View Display.")
+    @Description("Objective: Verify the appearance and accuracy of the product view on the webpage and match backend.")
+    @Severity(SeverityLevel.CRITICAL)
+    public void testProductViewDisplayAPI() {
+
+//        HomePage homePage = new HomePage(getPage());
+//
+//        final int nth = homePage.getRandomNumber();
+//        final Locator product = homePage.getProductByNumber(nth);
+//        final Map<String, String> productData = TestUtils.getData(product);
+//
+//        final JsonObject item = utils.api.APIUtils.getProductView(TestUtils.convertToString(nth));
+//
+////        Allure.step("Assert that image is value.");
+////        Assert.assertEquals(item.get("img"), productData.get("image"));
+//
+//        Allure.step("that the product title/name is correctly displayed and matches the intended product.");
+//        Assert.assertEquals(item.get("title"), productData.get("title"));
+//        Assert.assertEquals(item.get("price"), productData.get("price"));
+//        Assert.assertEquals(item.get("desc"), productData.get("desc"));
+
     }
 }
