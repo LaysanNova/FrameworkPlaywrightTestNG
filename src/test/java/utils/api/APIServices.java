@@ -64,5 +64,19 @@ public class APIServices {
 
     }
 
+    public static APIResponse postPagination(String n) {
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("id", n);
+
+        return playwright.request().newContext()
+                .post(
+                        ProjectProperties.API_BASE_URL + APIData.Next,
+                        RequestOptions.create()
+                                .setData(data)
+                );
+
+    }
+
 
 }

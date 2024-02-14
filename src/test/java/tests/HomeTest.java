@@ -1,6 +1,7 @@
 package tests;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
@@ -49,7 +50,7 @@ public class HomeTest extends BaseTest implements IRandom {
     public void testPurchaseWithCartValidationE2E() {
 
         ProdPage prodPage =
-                (ProdPage) new HomePage(getPage())
+                new HomePage(getPage())
                         .clickRandomCategory()
                         .clickRandomProduct()
                         .clickAddToCartButton()
@@ -104,31 +105,71 @@ public class HomeTest extends BaseTest implements IRandom {
     @Severity(SeverityLevel.NORMAL)
     public void testProductDisplayByCategory(String category, String cat) {
 
-        List<Locator> phones =
-                new HomePage(getPage())
-                        .clickCategory(category)
-                        .getProductsListOfCategory();
+        HomePage homePage = new HomePage(getPage());
 
-        JsonArray phonesAPI = utils.api.APIUtils.getProductByCategory(cat);
+        final List<Locator> productsByCat =
+                homePage
+                        .clickCategory(category)
+                        .getProductsList();
+
+        final JsonArray phonesAPI = utils.api.APIUtils.getProductByCategory(cat);
+
         int id = 0;
 
-        for (Locator phone : phones) {
+        for (Locator product : productsByCat) {
 
-            Map<String, String> phoneData = TestUtils.getData(phone);
+            Map<String, String> productData = TestUtils.getData(product);
 
             Allure.step("Assert that price matches to backend.");
-            Assert.assertEquals(TestUtils.convertToNumber(phoneData.get("price")), TestUtils.convertToNumber(phonesAPI.get(id).getAsJsonObject().get("price").getAsString()));
+            Assert.assertEquals(
+                    TestUtils.convertToDouble(productData.get("price")),
+                    TestUtils.convertToDouble(phonesAPI.get(id).getAsJsonObject().get("price").getAsString()));
 
             Allure.step("Assert that desc matches to backend.");
-            //Assert.assertEquals(phoneData.get("desc"), TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("desc")));
+            Assert.assertEquals(
+                    productData.get("desc"),
+                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("desc")));
 
             Allure.step("Assert that title matches to backend.");
-            Assert.assertEquals(phoneData.get("title"), TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("title")));
+            Assert.assertEquals(
+                    productData.get("title"),
+                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("title")));
 
             Allure.step("Assert that img matches to backend.");
-            Assert.assertEquals(phoneData.get("img"), phonesAPI.get(id).getAsJsonObject().get("img").getAsString());
+            Assert.assertEquals(
+                    productData.get("img"),
+                    phonesAPI.get(id).getAsJsonObject().get("img").getAsString());
 
             id ++;
         }
+    }
+
+    @Test(testName = "TC.XXX.XX: Product Quantity Verification")
+    @Description("Objective: Verify that the correct quantity of products is displayed on the webpage.")
+    @Severity(SeverityLevel.NORMAL)
+    public void testProductDisplayOnThePage() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        final List<Locator> entryProducts =
+                homePage
+                        .getProductsList();
+
+        Allure.step("Assert that quantity of products is according data.");
+        Assert.assertEquals(entryProducts.size(), TestData.maxProductsOnPage);
+
+        final List<Locator> nextProducts = homePage
+                .clickNextButton()
+                .getProductsList();
+
+        Allure.step("Assert that quantity of next products is according data.");
+        Assert.assertTrue(nextProducts.size() == TestData.maxProductsOnPage || nextProducts.size() < TestData.maxProductsOnPage);
+
+        final List<Locator> previousProducts = homePage
+                .clickPreviousButton()
+                .getProductsList();
+
+        Allure.step("Assert that quantity of products is according data.");
+        Assert.assertEquals(previousProducts.size(), TestData.maxProductsOnPage);
     }
 }

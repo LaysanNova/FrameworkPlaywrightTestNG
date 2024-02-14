@@ -64,7 +64,7 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
     }
 
     @Step("Get Products List displayed on the page.")
-    public List<Locator> getProductsListOfCategory() {
+    public List<Locator> getProductsList() {
 
         getPage().waitForTimeout(2000);
 
@@ -72,7 +72,7 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
     }
 
     public Locator getRandomProduct() {
-        List<Locator> allProducts = getProductsListOfCategory();
+        List<Locator> allProducts = getProductsList();
 
         return getRandomValue(allProducts);
     }
@@ -84,5 +84,18 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
         randomProduct.locator("h4.card-title > a").click();
 
         return new ProdPage(getPage());
+    }
+
+    @Step("Click 'Next' Button.")
+    public HomePage clickNextButton() {
+        nextButton.click();
+
+        return this;
+    }
+    @Step("Click 'Previous' Button.")
+    public HomePage clickPreviousButton() {
+        previousButton.click();
+
+        return this;
     }
 }
