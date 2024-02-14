@@ -1,7 +1,6 @@
 package tests;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;

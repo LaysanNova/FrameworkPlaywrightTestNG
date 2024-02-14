@@ -1,9 +1,5 @@
 package utils.api;
 
-import org.testng.annotations.DataProvider;
-
-import java.util.List;
-
 public final class APIData {
     public static final String CHECK = "/check";
     public static final String LOGIN = "/login";

@@ -7,9 +7,6 @@ import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
 import utils.reports.LoggerUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class APIUtils {
 
     static void checkStatus(APIResponse apiResponse, String methodName) {
@@ -146,5 +143,4 @@ public class APIUtils {
 
         return jsResponse;
     }
-
 }

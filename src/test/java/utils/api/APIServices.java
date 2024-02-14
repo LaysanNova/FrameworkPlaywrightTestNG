@@ -1,6 +1,5 @@
 package utils.api;
 
-
 import com.microsoft.playwright.APIResponse;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.RequestOptions;
@@ -77,6 +76,4 @@ public class APIServices {
                 );
 
     }
-
-
 }

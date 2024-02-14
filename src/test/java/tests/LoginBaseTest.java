@@ -125,6 +125,7 @@ public abstract class LoginBaseTest {
     }
 
     protected Page getPage() {
+
         return page;
     }
 }
