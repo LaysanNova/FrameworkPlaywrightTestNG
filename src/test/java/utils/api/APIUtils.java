@@ -105,7 +105,7 @@ public class APIUtils {
         return jsonArray;
     }
 
-    public static JsonArray getProducts() {
+    public static JsonObject getProducts() {
 
         JsonArray jsonArray = new JsonArray();
 
@@ -123,6 +123,28 @@ public class APIUtils {
             LoggerUtils.logException("API: EXCEPTION: FAILED to get entry products.");
         }
 
-        return jsonArray;
+        return jsResponse;
     }
+
+    public static JsonObject getNextProducts(String n) {
+
+        JsonArray jsonArray = new JsonArray();
+
+        final APIResponse apiResponse = APIServices.postPagination(n);
+
+        checkStatus(apiResponse, "Pagination");
+
+        final JsonObject jsResponse = initJsonObject(apiResponse.text());
+
+        try {
+            jsonArray =  jsResponse.getAsJsonArray("Items");
+
+        } catch (Exception e) {
+
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get next products.");
+        }
+
+        return jsResponse;
+    }
+
 }

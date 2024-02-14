@@ -31,6 +31,8 @@ public final class TestData {
     public static final String YEAR = "Year";
     public static final String successMessage = "Thank you for your purchase!";
 
+    public static final int maxProductsOnPage = 9;
+
     @DataProvider
     public static Object[][] menuItemsLoggedIn() {
         return new Object[][]{

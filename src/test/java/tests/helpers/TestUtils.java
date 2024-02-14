@@ -23,15 +23,25 @@ public class TestUtils {
         Map<String, String> data = new HashMap<>();
         data.put("price", locator.locator("h5").innerText().replace("$", ""));
         data.put("title", locator.locator("h4").innerText());
-        data.put("desc", locator.locator("p").innerText().replace("\n", "").trim());
+        data.put("desc", locator.locator("p").innerText().trim());
         data.put("img", locator.locator("img").getAttribute("src"));
 
         return data;
     }
 
-    public static Double convertToNumber(String n) {
+    public static Double convertToDouble(String n) {
 
         return Double.parseDouble(n);
+    }
+
+    public static int convertToInt(String n) {
+
+        return Integer.parseInt(n);
+    }
+
+    public static String convertToString(int number) {
+
+        return String.valueOf(number);
     }
 
     public static String makeString(JsonElement str) {
