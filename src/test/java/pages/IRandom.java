@@ -11,4 +11,10 @@ public interface IRandom {
 
         return listValues.get(random.nextInt(listValues.size()));
     }
+
+    default int getRandomInt(int max) {
+        Random random = new Random();
+
+        return random.nextInt(1, max + 1);
+    }
 }

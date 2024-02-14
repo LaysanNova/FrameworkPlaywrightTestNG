@@ -70,7 +70,21 @@ public class APIServices {
 
         return playwright.request().newContext()
                 .post(
-                        ProjectProperties.API_BASE_URL + APIData.Next,
+                        ProjectProperties.API_BASE_URL + APIData.NEXT,
+                        RequestOptions.create()
+                                .setData(data)
+                );
+
+    }
+
+    public static APIResponse postView(String id) {
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("id", id);
+
+        return playwright.request().newContext()
+                .post(
+                        ProjectProperties.API_BASE_URL + APIData.VIEW,
                         RequestOptions.create()
                                 .setData(data)
                 );

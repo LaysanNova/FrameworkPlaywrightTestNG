@@ -2,6 +2,7 @@ package utils.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
@@ -135,6 +136,27 @@ public class APIUtils {
 
         try {
             jsonArray =  jsResponse.getAsJsonArray("Items");
+
+        } catch (Exception e) {
+
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get next products.");
+        }
+
+        return jsResponse;
+    }
+
+    public static JsonObject getProductView(String id) {
+
+        final APIResponse apiResponse = APIServices.postView(id);
+
+        checkStatus(apiResponse, "View");
+
+        final JsonObject jsResponse = initJsonObject(apiResponse.text());
+
+        try {
+            if (!id.equals(jsResponse.get("id").getAsString())) {
+                Assert.fail();
+            }
 
         } catch (Exception e) {
 
