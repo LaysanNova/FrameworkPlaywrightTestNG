@@ -100,7 +100,9 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
     @Step("Click product by Number.")
     public ProdPage clickProductByNumber(int randomNumber) {
 
-       getProductsList().get(randomNumber).click();
+        Locator item = getProductsList().get(randomNumber);
+        getPage().waitForTimeout(2000);
+        item.click();
 
         return new ProdPage(getPage());
     }
@@ -108,7 +110,7 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
     @Step("Get random Number.")
     public int getRandomNumber() {
 
-        return randomNumber;
+       return randomNumber;
     }
 
     @Step("Click 'Next' Button.")
