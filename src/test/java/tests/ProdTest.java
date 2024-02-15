@@ -30,14 +30,18 @@ public class ProdTest extends BaseTest {
                         .getRandomProduct();
 
         final Map<String, String> productData = TestUtils.getData(randomProduct);
-        final ProdPage prodPage = homePage.clickProductNTH(randomProduct);
+
+        ProdPage prodPage =
+                homePage
+                        .clickProductByLocator(randomProduct);
+
         final Locator image = prodPage.getImg();
         final Locator productBody = prodPage.getProductBody();
 
         Allure.step("Assert that image is visible.");
         assertThat(image).isVisible();
 
-        Allure.step("Assert that image is value.");
+        Allure.step("Assert that image is valid.");
         Assert.assertEquals(productData.get("img"), image.getAttribute("src"));
 
         Allure.step("that the product title/name is correctly displayed and matches the intended product.");

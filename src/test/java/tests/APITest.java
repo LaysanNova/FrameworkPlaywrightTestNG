@@ -17,7 +17,6 @@ import tests.helpers.TestData;
 import tests.helpers.TestUtils;
 import utils.api.APIData;
 
-import javax.swing.text.Utilities;
 import java.util.Map;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
@@ -87,21 +86,37 @@ public class APITest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testProductViewDisplayAPI() {
 
-//        HomePage homePage = new HomePage(getPage());
-//
-//        final int nth = homePage.getRandomNumber();
-//        final Locator product = homePage.getProductByNumber(nth);
-//        final Map<String, String> productData = TestUtils.getData(product);
-//
-//        final JsonObject item = utils.api.APIUtils.getProductView(TestUtils.convertToString(nth));
-//
-////        Allure.step("Assert that image is value.");
-////        Assert.assertEquals(item.get("img"), productData.get("image"));
-//
-//        Allure.step("that the product title/name is correctly displayed and matches the intended product.");
-//        Assert.assertEquals(item.get("title"), productData.get("title"));
-//        Assert.assertEquals(item.get("price"), productData.get("price"));
-//        Assert.assertEquals(item.get("desc"), productData.get("desc"));
+        HomePage homePage = new HomePage(getPage());
 
+        final int nth = homePage.getRandomNumber();
+
+        ProdPage prodPage =
+                homePage
+                        .clickProductByNumber(nth);
+
+        final JsonObject itemAPI = utils.api.APIUtils.getProductView(TestUtils.convertToString(nth + 1));
+        final Locator imageOnPage = prodPage.getImg();
+        final Double priceOnPage = TestUtils.convertToDouble(prodPage.getProductPrice());
+        final String descOnPage = prodPage.getProductDesc();
+        final String titleOnPage = prodPage.getProductTitle();
+
+        Allure.step("Assert that image is valid.");
+        Assert.assertEquals(itemAPI.get("img").getAsString(), imageOnPage.getAttribute("src"));
+
+        Allure.step("Assert that the product title/name is correctly displayed and matches the API.");
+        Assert.assertEquals(
+                itemAPI.get("title").getAsString(),
+                titleOnPage
+        );
+
+        Assert.assertEquals(
+                TestUtils.convertToDouble(itemAPI.get("price").getAsString()),
+                priceOnPage
+        );
+
+        Assert.assertEquals(
+                TestUtils.makeString(itemAPI.get("desc")),
+                descOnPage
+        );
     }
 }
