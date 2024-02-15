@@ -71,6 +71,7 @@ public class PlaceOrderModal extends FormPage<PlaceOrderModal> {
     @Step("Click 'Purchase' button.")
     public ConfirmationModal clickPurchaseButton() {
         purchaseButton.click();
+        getPage().waitForTimeout(2000);
 
         return new ConfirmationModal(getPage());
     }
