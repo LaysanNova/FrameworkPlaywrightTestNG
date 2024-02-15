@@ -81,7 +81,7 @@ public class APITest extends BaseTest {
         Assert.assertEquals(TestData.maxProductsOnPage + nextItems.size(), TestUtils.convertToInt(lastEvaluatedKey));
     }
 
-    @Test(testName = "TC.XXX.XX: Product View Display.")
+    @Test(testName = "TC.XXX.XX: API Product View Display.")
     @Description("Objective: Verify the appearance and accuracy of the product view on the webpage and match backend.")
     @Severity(SeverityLevel.CRITICAL)
     public void testProductViewDisplayAPI() {
