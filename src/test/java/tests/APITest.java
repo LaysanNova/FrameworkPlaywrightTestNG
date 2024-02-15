@@ -11,6 +11,7 @@ import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pages.CartPage;
 import pages.HomePage;
 import pages.ProdPage;
 import tests.helpers.TestData;
@@ -154,5 +155,39 @@ public class APITest extends BaseTest {
 
         Allure.step("Assert that size of cart decreased by 1.");
         Assert.assertEquals(amountOfProductAfterDeleting, amountOfProductAfterAdding - 1);
+    }
+
+    @Test(testName = "TC.XXX.XX: Validation API cart after purchase.")
+    @Description("Objective: To validate the cart gets empty after purchase process.")
+    @Severity(SeverityLevel.CRITICAL)
+    public void testPurchaseWithCartValidationAPI() {
+
+        ProdPage prodPage =
+                new HomePage(getPage())
+                        .clickRandomCategory()
+                        .clickRandomProduct()
+                        .clickAddToCartButton()
+                        .clickOk();
+
+        final JsonArray cartState = utils.api.APIUtils.getProductInTheCart();
+
+        Allure.step("Assert that cart is not empty after adding product.");
+        Assert.assertFalse(cartState.isEmpty());
+
+        prodPage
+                .clickCartMenu()
+                .clickPlaceOrderButton()
+                .enterName()
+                .enterCountry()
+                .enterCity()
+                .enterCreditCard()
+                .enterMonth()
+                .enterYear()
+                .clickPurchaseButton();
+
+        final JsonArray cartStateAfterPurchase  = utils.api.APIUtils.getProductInTheCart();
+
+        Allure.step("Assert that cart is empty after purchase process");
+        Assert.assertTrue(cartStateAfterPurchase.isEmpty());
     }
 }
