@@ -165,4 +165,25 @@ public class APIUtils {
 
         return jsResponse;
     }
+
+    public static JsonArray getProductInTheCart() {
+
+        JsonArray jsonArray = new JsonArray();
+
+        final APIResponse apiResponse = APIServices.postViewCart();
+
+        checkStatus(apiResponse, "View cart");
+
+        final JsonObject jsResponse = initJsonObject(apiResponse.text());
+
+        try {
+            jsonArray = jsResponse.getAsJsonArray("Items");
+
+        } catch (Exception e) {
+
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get next products.");
+        }
+
+        return jsonArray;
+    }
 }

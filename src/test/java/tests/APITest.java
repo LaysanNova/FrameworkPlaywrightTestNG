@@ -17,10 +17,6 @@ import tests.helpers.TestData;
 import tests.helpers.TestUtils;
 import utils.api.APIData;
 
-import java.util.Map;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
 public class APITest extends BaseTest {
 
     @Test(
@@ -118,5 +114,45 @@ public class APITest extends BaseTest {
                 TestUtils.makeString(itemAPI.get("desc")),
                 descOnPage
         );
+    }
+
+    @Test(testName = "TC.XXX.XX: Validate API Cart Integration with UI.")
+    @Description("Objective: Validating the integration between the backend API cart functionality and the user interface (UI) of the application.")
+    @Severity(SeverityLevel.CRITICAL)
+    public void testValidateAPICartIntegrationWithUI() {
+
+        JsonArray initialCartState = utils.api.APIUtils.getProductInTheCart();
+        final int amountOfProduct = initialCartState.size();
+
+        HomePage homePage = new HomePage(getPage());
+
+        final int nth = homePage.getRandomNumber();
+
+        ProdPage prodPage =
+                homePage
+                        .clickProductByNumber(nth)
+                        .clickAddToCartButton()
+                        .clickOk();
+
+        JsonArray cartStateAfterAdding = utils.api.APIUtils.getProductInTheCart();
+
+        final int amountOfProductAfterAdding = cartStateAfterAdding.size();
+        final int productId = cartStateAfterAdding.get(amountOfProductAfterAdding - 1).getAsJsonObject().get("prod_id").getAsInt() - 1;
+
+        Allure.step("Assert that size of cart increased by 1.");
+        Assert.assertEquals(amountOfProduct + 1, amountOfProductAfterAdding);
+
+        Allure.step("Assert that added product is match.");
+        Assert.assertEquals(productId, nth);
+
+        prodPage
+                .clickCartMenu()
+                .clickFirstDelete();
+
+        JsonArray cartStateAfterDeleting = utils.api.APIUtils.getProductInTheCart();
+        final int amountOfProductAfterDeleting = cartStateAfterDeleting.size();
+
+        Allure.step("Assert that size of cart decreased by 1.");
+        Assert.assertEquals(amountOfProductAfterDeleting, amountOfProductAfterAdding - 1);
     }
 }

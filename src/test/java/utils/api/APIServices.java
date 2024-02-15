@@ -90,4 +90,19 @@ public class APIServices {
                 );
 
     }
+
+    public static APIResponse postViewCart() {
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("cookie", APIData.COOKIE);
+        data.put("flag", APIData.FLAG);
+
+        return playwright.request().newContext()
+                .post(
+                        ProjectProperties.API_BASE_URL + APIData.VIEW_CART,
+                        RequestOptions.create()
+                                .setData(data)
+                );
+
+    }
 }

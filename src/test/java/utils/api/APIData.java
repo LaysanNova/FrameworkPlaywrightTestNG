@@ -7,6 +7,11 @@ public final class APIData {
     public static final String ENTRIES = "/entries";
     public static final String NEXT = "/pagination";
     public static final String VIEW = "/view";
+    public static final String VIEW_CART = "/viewcart";
+
+
+    public static final String COOKIE = "UXNqamZrbGQxNzA3NTQ3";
+    public static final String FLAG= "true";
 
     public static final String PHONES = "phone";
     public static final String LAPTOPS = "notebook";
