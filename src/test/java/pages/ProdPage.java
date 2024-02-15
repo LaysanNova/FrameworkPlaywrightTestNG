@@ -37,17 +37,21 @@ public class ProdPage extends HeadMenu<ProdPage> {
     }
 
     public Locator getProductBody() {
+
         return productBody;
     }
 
     public String getProductTitle() {
-        return productTitle.innerText();
+
+        return productTitle.innerText().trim();
     }
 
     public String getProductPrice() {
+
         return TestUtils.extractPrice(productPrice);
     }
     public String getProductDesc() {
-        return productDesc.innerText();
+
+        return productDesc.innerText().trim();
     }
 }

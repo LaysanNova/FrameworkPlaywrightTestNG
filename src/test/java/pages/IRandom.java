@@ -15,6 +15,6 @@ public interface IRandom {
     default int getRandomInt(int max) {
         Random random = new Random();
 
-        return random.nextInt(1, max + 1);
+        return random.nextInt(0, max);
     }
 }
