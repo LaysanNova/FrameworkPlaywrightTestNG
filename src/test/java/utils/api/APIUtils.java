@@ -8,7 +8,7 @@ import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
 import utils.reports.LoggerUtils;
 
-public final class APIUtils {
+public class APIUtils {
 
     static void checkStatus(APIResponse apiResponse, String methodName) {
         if (apiResponse.status() < 200 || apiResponse.status() >= 300) {
@@ -160,7 +160,7 @@ public final class APIUtils {
 
         } catch (Exception e) {
 
-            LoggerUtils.logException("API: EXCEPTION: FAILED to get next products.");
+            LoggerUtils.logException("API: EXCEPTION: FAILED get product view.");
         }
 
         return jsResponse;
@@ -181,7 +181,7 @@ public final class APIUtils {
 
         } catch (Exception e) {
 
-            LoggerUtils.logException("API: EXCEPTION: FAILED to get next products.");
+            LoggerUtils.logException("API: EXCEPTION: FAILED to get products in the cart.");
         }
 
         return jsonArray;
