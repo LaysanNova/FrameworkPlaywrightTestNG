@@ -7,7 +7,7 @@ import com.microsoft.playwright.Playwright;
 
 import java.nio.file.Paths;
 
-public class BrowserManager {
+public final class BrowserManager {
 
     public static Browser createBrowser(Playwright playwright) {
         switch (ProjectProperties.BROWSER_TYPE_NAME) {

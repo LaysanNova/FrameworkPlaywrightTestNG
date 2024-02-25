@@ -9,7 +9,7 @@ import utils.runner.ProjectProperties;
 import java.util.HashMap;
 import java.util.Map;
 
-public class APIServices {
+public final class APIServices {
     static Playwright playwright = Playwright.create();
     public static APIResponse check(String token) {
 

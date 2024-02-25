@@ -3,7 +3,7 @@ package utils.reports;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class LoggerUtils {
+public final class LoggerUtils {
 
     private static final String ERROR = "❌";
     private static final String SUCCESS = "✅";

@@ -8,7 +8,7 @@ import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
 import utils.reports.LoggerUtils;
 
-public class APIUtils {
+public final class APIUtils {
 
     static void checkStatus(APIResponse apiResponse, String methodName) {
         if (apiResponse.status() < 200 || apiResponse.status() >= 300) {
