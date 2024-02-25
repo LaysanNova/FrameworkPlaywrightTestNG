@@ -95,14 +95,14 @@ public class APITest extends BaseTest {
         final Locator imageOnPage = prodPage.getImg();
         final Double priceOnPage = TestUtils.convertToDouble(prodPage.getProductPrice());
         final String descOnPage = prodPage.getProductDesc();
-        final String titleOnPage = prodPage.getProductTitle();
+        final String titleOnPage = prodPage.getProductTitle().trim();
 
         Allure.step("Assert that image is valid.");
         Assert.assertEquals(itemAPI.get("img").getAsString(), imageOnPage.getAttribute("src"));
 
         Allure.step("Assert that the product title/name is correctly displayed and matches the API.");
         Assert.assertEquals(
-                itemAPI.get("title").getAsString(),
+                itemAPI.get("title").getAsString().trim(),
                 titleOnPage
         );
 
