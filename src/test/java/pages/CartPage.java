@@ -42,5 +42,4 @@ public class CartPage extends HeadMenu<CartPage> {
 
         return this;
     }
-
 }
