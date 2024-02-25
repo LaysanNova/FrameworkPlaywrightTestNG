@@ -39,6 +39,7 @@ public class CartPage extends HeadMenu<CartPage> {
     @Step("Click 'Delete'.")
     public CartPage clickFirstDelete() {
         delete.nth(0).click();
+        getPage().waitForTimeout(3000);
 
         return this;
     }
