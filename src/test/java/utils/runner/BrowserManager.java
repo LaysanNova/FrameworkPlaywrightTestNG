@@ -4,6 +4,7 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Playwright;
+import utils.reports.LoggerUtils;
 
 import java.nio.file.Paths;
 
@@ -27,7 +28,7 @@ public final class BrowserManager {
                         .setSlowMo(ProjectProperties.IS_SLOW));
             }
             default -> {
-                System.out.println("WARNING: Default browser CHROMIUM launched");
+                LoggerUtils.logError("WARNING: Default browser CHROMIUM launched");
 
                 return playwright.chromium().launch(new BrowserType.LaunchOptions()
                         .setHeadless(ProjectProperties.IS_HEADLESS)
