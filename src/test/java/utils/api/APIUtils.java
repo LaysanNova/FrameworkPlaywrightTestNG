@@ -2,7 +2,6 @@ package utils.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.microsoft.playwright.APIResponse;
 import org.testng.Assert;
@@ -177,6 +176,7 @@ public class APIUtils {
         final JsonObject jsResponse = initJsonObject(apiResponse.text());
 
         try {
+
             jsonArray = jsResponse.getAsJsonArray("Items");
 
         } catch (Exception e) {

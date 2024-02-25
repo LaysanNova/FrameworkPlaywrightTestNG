@@ -11,7 +11,6 @@ import jdk.jfr.Description;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.CartPage;
 import pages.HomePage;
 import pages.ProdPage;
 import tests.helpers.TestData;
@@ -169,10 +168,12 @@ public class APITest extends BaseTest {
                         .clickAddToCartButton()
                         .clickOk();
 
+
         final JsonArray cartState = utils.api.APIUtils.getProductInTheCart();
 
         Allure.step("Assert that cart is not empty after adding product.");
-        Assert.assertFalse(cartState.isEmpty());
+        Assert.assertFalse(cartState.isEmpty(),
+                "If FAIL: The cart is EMPTY after adding product.\n");
 
         prodPage
                 .clickCartMenu()
@@ -187,7 +188,8 @@ public class APITest extends BaseTest {
 
         final JsonArray cartStateAfterPurchase  = utils.api.APIUtils.getProductInTheCart();
 
-        Allure.step("Assert that cart is empty after purchase process");
-        Assert.assertTrue(cartStateAfterPurchase.isEmpty());
+        Allure.step("Assert that cart is empty after purchase process.");
+        Assert.assertTrue(cartStateAfterPurchase.isEmpty(),
+                "If FAIL: The cart is NOT empty after purchase process.\n");
     }
 }
