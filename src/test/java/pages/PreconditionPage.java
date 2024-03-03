@@ -19,7 +19,12 @@ public class PreconditionPage extends HeadMenu<PreconditionPage>  {
                         .clickCartMenu();
 
         List<Locator> delete = cartPage.getDeleteButtons();
-        System.out.println(delete.size());
+        for (Locator d : delete) {
+            cartPage.clickFirstDelete();
+        }
+
+        cartPage
+                .clickHomeMenu();
 
     }
 }
