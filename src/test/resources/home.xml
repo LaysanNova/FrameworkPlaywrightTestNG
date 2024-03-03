@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Ecommerce store">
-    <test name="Smoke tests">
+    <test name="Home tests">
         <classes>
             <class name="tests.HomeTest"/>
         </classes>
