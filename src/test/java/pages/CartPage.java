@@ -5,11 +5,13 @@ import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import pages.model.HeadMenu;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CartPage extends HeadMenu<CartPage> {
 
     private final List<Locator> products = allElements("#tbodyid > tr");
+    private final Locator productsTable = locator("#tbodyid");
     private final Locator placeOrderButton = button("Place Order");
     private final Locator total = locator("h3[id='totalp']");
     private final Locator delete = link("Delete");
@@ -42,5 +44,16 @@ public class CartPage extends HeadMenu<CartPage> {
         getPage().waitForTimeout(3000);
 
         return this;
+    }
+
+    public List<Locator> getDeleteButtons() {
+
+        List<Locator> deleteButtonsList = new ArrayList<>();
+
+        if (productsTable.isVisible()) {
+            deleteButtonsList = getProducts().stream().map(x -> x.locator("a")).toList();
+        }
+
+        return deleteButtonsList;
     }
 }

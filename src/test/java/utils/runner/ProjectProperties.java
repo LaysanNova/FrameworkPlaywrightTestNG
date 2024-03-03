@@ -1,6 +1,9 @@
 package utils.runner;
 
+import utils.reports.LoggerUtils;
+
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -43,7 +46,7 @@ public final class ProjectProperties {
                     FileInputStream fileInputStream = new FileInputStream("./src/test/resources/config.properties");
                     properties.load(fileInputStream);
                 } catch (IOException e) {
-                    System.out.println("You need to create it from config.properties.TEMPLATE file.");
+                    LoggerUtils.logFatal("FATAL: Properties file NOT found.");
                     System.exit(1);
                 }
             }
