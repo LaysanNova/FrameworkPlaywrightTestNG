@@ -24,7 +24,6 @@ public class HomeTest extends BaseTest implements IRandom {
     @Test(testName = "TC.XXX.XX: Verify Logout Functionality")
     @Description("Objective: To ensure that the logout feature functions correctly and securely terminates the user session.")
     @Severity(SeverityLevel.CRITICAL)
-    @Ignore
     public void testLogOut() {
 
         new HomePage(getPage())
@@ -49,8 +48,8 @@ public class HomeTest extends BaseTest implements IRandom {
     @Severity(SeverityLevel.CRITICAL)
     public void testPurchaseWithCartValidationE2E() {
 
-//        PreconditionPage precondition = new PreconditionPage(getPage());
-//        precondition.cleanCart();
+        PreconditionPage precondition = new PreconditionPage(getPage());
+        precondition.cleanCart();
 
         ProdPage prodPage =
                 new HomePage(getPage())
@@ -106,7 +105,6 @@ public class HomeTest extends BaseTest implements IRandom {
     )
     @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
     @Severity(SeverityLevel.NORMAL)
-    @Ignore
     public void testProductDisplayByCategory(String category, String cat) {
 
         HomePage homePage = new HomePage(getPage());

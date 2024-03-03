@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CartPage extends HeadMenu<CartPage> {
 
-    private final List<Locator> products = allElements("#tbodyid > tr");
+    private final List<Locator> productsList = locator(".success").all();
     private final Locator productsTable = locator("#tbodyid");
     private final Locator placeOrderButton = button("Place Order");
     private final Locator total = locator("h3[id='totalp']");
@@ -20,9 +20,9 @@ public class CartPage extends HeadMenu<CartPage> {
         super(page);
     }
 
-    public List<Locator> getProducts() {
+    public List<Locator> getProductsList() {
 
-        return products;
+        return productsList;
     }
 
     @Step("Get 'Total'.")
@@ -50,8 +50,10 @@ public class CartPage extends HeadMenu<CartPage> {
 
         List<Locator> deleteButtonsList = new ArrayList<>();
 
-        if (productsTable.isVisible()) {
-            deleteButtonsList = getProducts().stream().map(x -> x.locator("a")).toList();
+        if (!productsList.isEmpty()) {
+            for (Locator product : productsList) {
+                deleteButtonsList.add(product.locator("a"));
+            }
         }
 
         return deleteButtonsList;
