@@ -41,8 +41,9 @@ public final class TestData {
                 {"Contact", CONTACT},
                 {"About us", ABOUT_US},
                 {"Cart", CART},
-                {"Log out", LOG_OUT},
-        };    }
+                {"Log out", LOG_OUT}
+        };
+    }
 
     @DataProvider
     public static Object[][] menuItemsLoggedOut() {
@@ -69,8 +70,9 @@ public final class TestData {
     public static Object[][] category() {
         return new Object[][]{
                 {"Phones", APIData.PHONES},
-                {"Laptops", APIData.LAPTOPS},
                 {"Monitors", APIData.MONITORS},
+                {"Laptops", APIData.LAPTOPS}
+
         };
     }
 
