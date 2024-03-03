@@ -6,7 +6,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import jdk.jfr.Description;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.ContactModal;
 import pages.HomePage;
 import tests.helpers.TestData;
