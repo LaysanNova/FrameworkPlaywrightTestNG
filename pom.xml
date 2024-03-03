@@ -75,6 +75,9 @@
                         <suiteXmlFile>
                             src/test/resources/testng-smoke.xml
                         </suiteXmlFile>
+                        <suiteXmlFile>
+                            src/test/resources/home.xml
+                        </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>
