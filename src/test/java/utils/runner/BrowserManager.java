@@ -31,8 +31,7 @@ public final class BrowserManager {
                 LoggerUtils.logError("WARNING: Default browser CHROMIUM launched");
 
                 return playwright.chromium().launch(new BrowserType.LaunchOptions()
-                        .setHeadless(ProjectProperties.IS_HEADLESS)
-                        .setSlowMo(ProjectProperties.IS_SLOW));
+                        .setHeadless(ProjectProperties.IS_HEADLESS));
             }
         }
     }

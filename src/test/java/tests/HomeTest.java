@@ -48,6 +48,9 @@ public class HomeTest extends BaseTest implements IRandom {
     @Severity(SeverityLevel.CRITICAL)
     public void testPurchaseWithCartValidationE2E() {
 
+//        PreconditionPage precondition = new PreconditionPage(getPage());
+//        precondition.cleanCart();
+
         ProdPage prodPage =
                 new HomePage(getPage())
                         .clickRandomCategory()
