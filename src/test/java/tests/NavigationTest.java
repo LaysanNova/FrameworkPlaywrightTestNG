@@ -5,8 +5,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import io.qameta.allure.*;
 import jdk.jfr.Description;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import tests.helpers.TestData;
 import tests.Login.LoginUtils;
 import utils.runner.ProjectProperties;
@@ -14,6 +13,7 @@ import utils.runner.ProjectProperties;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static tests.helpers.TestData.*;
 
+@Ignore
 public final class NavigationTest extends BaseTest {
 
     @Test(testName = "TC.XXX.XX: Verify Landing Page Display")

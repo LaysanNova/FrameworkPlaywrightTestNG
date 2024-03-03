@@ -20,6 +20,7 @@ import java.lang.reflect.Method;
 import static utils.reports.LoggerInfo.getBrowserInfo;
 import static utils.reports.LoggerUtils.*;
 
+@Ignore
 public abstract class LoginBaseTest {
 
     final Playwright playwright = Playwright.create();

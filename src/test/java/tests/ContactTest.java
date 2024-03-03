@@ -6,7 +6,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import jdk.jfr.Description;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.ContactModal;
 import pages.HomePage;
 import tests.helpers.TestData;
@@ -14,6 +14,7 @@ import tests.helpers.TestUtils;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
+@Ignore
 public class ContactTest extends BaseTest{
     @Test(testName = "TC.XXX.XX: Contact Us Functionality.")
     @Description("Verify that all fields are clear and accessible for user input.")

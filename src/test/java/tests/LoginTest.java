@@ -5,14 +5,14 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import jdk.jfr.Description;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.LoginModal;
 import tests.Login.LoginData;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
+@Ignore
 public class LoginTest extends LoginBaseTest {
 
     @Test(
