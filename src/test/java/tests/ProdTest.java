@@ -15,7 +15,6 @@ import java.util.Map;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-@Ignore
 public class ProdTest extends BaseTest {
 
     @Test(testName = "TC.XXX.XX: Product View Display.")

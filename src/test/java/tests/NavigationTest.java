@@ -13,7 +13,6 @@ import utils.runner.ProjectProperties;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static tests.helpers.TestData.*;
 
-@Ignore
 public final class NavigationTest extends BaseTest {
 
     @Test(testName = "TC.XXX.XX: Verify Landing Page Display")

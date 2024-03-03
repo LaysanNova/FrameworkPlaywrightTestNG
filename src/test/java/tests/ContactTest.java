@@ -14,7 +14,6 @@ import tests.helpers.TestUtils;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-@Ignore
 public class ContactTest extends BaseTest{
     @Test(testName = "TC.XXX.XX: Contact Us Functionality.")
     @Description("Verify that all fields are clear and accessible for user input.")
