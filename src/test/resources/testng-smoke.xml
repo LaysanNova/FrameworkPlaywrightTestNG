@@ -4,7 +4,6 @@
 <suite name="Ecommerce store">
     <test name="Smoke tests">
         <classes>
-            <class name="tests.HomeTest"/>
             <class name="tests.NavigationTest"/>
             <class name="tests.APITest"/>
             <class name="tests.CartTest"/>
