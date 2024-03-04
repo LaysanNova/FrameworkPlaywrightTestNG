@@ -29,6 +29,7 @@ public class ConfirmationModal extends FormPage<ConfirmationModal> {
         return successMessage;
     }
 
+    @Step("Get success symbol of purchase.")
     public Locator getSuccessSymbol() {
 
         return successSymbol;

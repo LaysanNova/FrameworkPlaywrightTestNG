@@ -25,7 +25,6 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
         super(page);
     }
 
-    @Step("Click 'Phones' Category.")
     public HomePage clickPhonesCategory() {
         phonesCategory.click();
         getPage().waitForLoadState();
@@ -33,20 +32,19 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
         return this;
     }
 
-    @Step("Click 'Laptops' Category.")
     public HomePage clickLaptopsCategory() {
         laptopsCategory.click();
 
         return this;
     }
 
-    @Step("Click 'Monitors' Category.")
     public HomePage clickMonitorsCategory() {
         monitorsCategory.click();
 
         return this;
     }
 
+    @Step("Click category {category}.")
     public HomePage clickCategory(String category) {
 
         switch (category) {
@@ -58,7 +56,7 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
         return this;
     }
 
-    @Step("Click random Category.")
+    @Step("Click random category.")
     public HomePage clickRandomCategory() {
 
         Locator randomCategory = getRandomValue(allCategories);
@@ -98,7 +96,7 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
         return new ProdPage(getPage());
     }
 
-    @Step("Click product by Number.")
+    @Step("Click product by Number {randomNumber}.")
     public ProdPage clickProductByNumber(int randomNumber) {
 
         Locator item = getProductsList().get(randomNumber);
