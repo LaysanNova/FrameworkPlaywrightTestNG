@@ -18,4 +18,13 @@ public final class LoggerInfo {
 
         return "Browser " + browserName + " " + browserId + " launched.\n";
     }
+
+    public static String stepInfo(Object object, String step) {
+        return object.getClass().getEnclosingMethod().getName() +
+                "\n\t\t\tStep: " + step;
+    }
+
+    public static String stepInfo(String step) {
+        return "\n\t\t\tStep: " + step;
+    }
 }

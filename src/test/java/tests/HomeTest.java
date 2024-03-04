@@ -12,6 +12,8 @@ import pages.*;
 import tests.helpers.TestData;
 
 import tests.helpers.TestUtils;
+import utils.reports.LoggerInfo;
+import utils.reports.LoggerUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -48,8 +50,12 @@ public class HomeTest extends BaseTest implements IRandom {
     @Severity(SeverityLevel.CRITICAL)
     public void testPurchaseWithCartValidationE2E() {
 
+        LoggerUtils.logInfo(LoggerInfo.stepInfo(new Object() {}, "precondition"));
+
         PreconditionPage precondition = new PreconditionPage(getPage());
         precondition.cleanCart();
+
+        LoggerUtils.logInfo(LoggerInfo.stepInfo("prodPage"));
 
         ProdPage prodPage =
                 new HomePage(getPage())
@@ -58,12 +64,15 @@ public class HomeTest extends BaseTest implements IRandom {
                         .clickAddToCartButton()
                         .clickOk();
 
+        LoggerUtils.logInfo(LoggerInfo.stepInfo("price"));
         final String price = extractPrice(prodPage.get_$price());
 
+        LoggerUtils.logInfo(LoggerInfo.stepInfo("cartPage"));
         CartPage cartPage =
                 prodPage
                         .clickCartMenu();
 
+        LoggerUtils.logInfo(LoggerInfo.stepInfo("total"));
         final String total = cartPage.getTotal();
 
         Allure.step("Assert that price of product equals to total before placing the order.");
