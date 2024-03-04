@@ -26,9 +26,9 @@ public class CartPage extends HeadMenu<CartPage> {
 
         getPage().waitForLoadState();
         getPage().waitForTimeout(1000);
-        Locator l = locator(".success").first();
+        Locator firstProduct = locator(".success").first();
 
-        if (l.isVisible()) {
+        if (firstProduct.isVisible()) {
             productList =  allElements(".success");
             getPage().waitForTimeout(1000);
         }
