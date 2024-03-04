@@ -50,13 +50,11 @@ public class HomeTest extends BaseTest implements IRandom {
     @Severity(SeverityLevel.CRITICAL)
     public void testE2EPurchaseWithCartValidation() {
 
-        LoggerUtils.logInfo(LoggerInfo.stepInfo(new Object() {}, "precondition"));
-
+        LoggerUtils.logInfo("precondition");
         PreconditionPage precondition = new PreconditionPage(getPage());
         precondition.cleanCart();
 
-        LoggerUtils.logInfo(LoggerInfo.stepInfo("prodPage"));
-
+        LoggerUtils.logInfo("prodPage");
         ProdPage prodPage =
                 new HomePage(getPage())
                         .clickRandomCategory()
@@ -64,29 +62,32 @@ public class HomeTest extends BaseTest implements IRandom {
                         .clickAddToCartButton()
                         .clickOk();
 
-        LoggerUtils.logInfo(LoggerInfo.stepInfo("price"));
+        LoggerUtils.logInfo("price");
         final String price = extractPrice(prodPage.get_$price());
 
-        LoggerUtils.logInfo(LoggerInfo.stepInfo("cartPage"));
+        LoggerUtils.logInfo("cartPage");
         CartPage cartPage =
                 prodPage
                         .clickCartMenu();
 
-        LoggerUtils.logInfo(LoggerInfo.stepInfo("total"));
+        LoggerUtils.logInfo("total");
         final String total = cartPage.getTotal();
 
         Allure.step("Assert that price of product equals to total before placing the order.");
         Assert.assertEquals(price, total);
 
+        LoggerUtils.logInfo("placeOrderModal");
         PlaceOrderModal placeOrderModal =
                 cartPage
                         .clickPlaceOrderButton();
 
+        LoggerUtils.logInfo("totalOnPlaceOrder");
         final String totalOnPlaceOrder = placeOrderModal.getTotal();
 
         Allure.step("Assert that price of product equals to total on order.");
         Assert.assertEquals(total, totalOnPlaceOrder);
 
+        LoggerUtils.logInfo("successModal");
         ConfirmationModal successModal =
                 placeOrderModal
                         .enterName()
@@ -97,7 +98,10 @@ public class HomeTest extends BaseTest implements IRandom {
                         .enterYear()
                         .clickPurchaseButton();
 
+        LoggerUtils.logInfo("message");
         final Locator message = successModal.getSuccessMessage();
+
+        LoggerUtils.logInfo("successSymbol");
         final Locator successSymbol = successModal.getSuccessSymbol();
 
         Allure.step("Assert that message of purchase contains " + TestData.successMessage + ".");
@@ -105,7 +109,6 @@ public class HomeTest extends BaseTest implements IRandom {
 
         Allure.step("Assert that message has success sign.");
         assertThat(successSymbol).isVisible();
-
     }
 
     @Test(

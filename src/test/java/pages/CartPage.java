@@ -38,6 +38,8 @@ public class CartPage extends HeadMenu<CartPage> {
     @Step("Get 'Total'.")
     public String getTotal() {
 
+        getPage().waitForTimeout(1000);
+
         return total.innerText();
     }
 
