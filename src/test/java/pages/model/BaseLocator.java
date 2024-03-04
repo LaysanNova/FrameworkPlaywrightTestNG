@@ -112,6 +112,7 @@ abstract class BaseLocator {
         return locator.all();
     }
 
+
     protected List<Locator> allElements(String css) {
 
         return getList(locator(css));
