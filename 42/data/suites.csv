@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 04 00:27:38 GMT 2024","Mon Mar 04 00:27:39 GMT 2024","801","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testLogOut","testLogOut",""
+"broken","Mon Mar 04 00:27:56 GMT 2024","Mon Mar 04 00:27:56 GMT 2024","1","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","closeContext","closeContext",""
+"passed","Mon Mar 04 00:27:41 GMT 2024","Mon Mar 04 00:27:47 GMT 2024","6140","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testProductDisplayOnThePage","testProductDisplayOnThePage",""
+"failed","Mon Mar 04 00:27:50 GMT 2024","Mon Mar 04 00:27:55 GMT 2024","5287","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testPurchaseWithCartValidationE2E","testPurchaseWithCartValidationE2E",""
