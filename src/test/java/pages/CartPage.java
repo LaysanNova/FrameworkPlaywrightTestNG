@@ -24,8 +24,11 @@ public class CartPage extends HeadMenu<CartPage> {
 
         List<Locator> productList = new ArrayList<>();
 
+        getPage().waitForLoadState();
+
         if (!productsTable.locator("tr").all().isEmpty()) {
             productList =  allElements(".success");
+            getPage().waitForTimeout(1000);
         }
 
         return productList;
