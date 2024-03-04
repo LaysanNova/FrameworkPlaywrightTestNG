@@ -23,7 +23,7 @@ import static tests.helpers.TestUtils.extractPrice;
 
 public class HomeTest extends BaseTest implements IRandom {
 
-    @Test(testName = "TC.XXX.XX: Verify Logout Functionality")
+    @Test(priority = 2, testName = "TC.XXX.XX: Verify Logout Functionality")
     @Description("Objective: To ensure that the logout feature functions correctly and securely terminates the user session.")
     @Severity(SeverityLevel.CRITICAL)
     public void testLogOut() {
@@ -45,7 +45,7 @@ public class HomeTest extends BaseTest implements IRandom {
         assertThat(login).isVisible();
     }
 
-    @Test(testName = "TC.XXX.XX: Seamless Purchase Journey Validation E2E")
+    @Test(priority = 1, testName = "TC.XXX.XX: Seamless Purchase Journey Validation E2E")
     @Description("Objective: To validate the entire purchase process.")
     @Severity(SeverityLevel.CRITICAL)
     public void testE2EPurchaseWithCartValidation() {
@@ -112,6 +112,7 @@ public class HomeTest extends BaseTest implements IRandom {
     }
 
     @Test(
+            priority = 3,
             testName = "TC.XXX.XX: Category Navigation - Verify Product Display matches to API",
             dataProvider = "category", dataProviderClass = TestData.class
     )
@@ -158,7 +159,7 @@ public class HomeTest extends BaseTest implements IRandom {
         }
     }
 
-    @Test(testName = "TC.XXX.XX: Product Quantity Verification")
+    @Test(priority = 1, testName = "TC.XXX.XX: Product Quantity Verification")
     @Description("Objective: Verify that the correct quantity of products is displayed on the webpage.")
     @Severity(SeverityLevel.NORMAL)
     public void testProductDisplayOnThePage() {
