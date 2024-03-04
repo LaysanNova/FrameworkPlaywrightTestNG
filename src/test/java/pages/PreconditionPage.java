@@ -26,6 +26,8 @@ public class PreconditionPage extends HeadMenu<PreconditionPage>  {
         List<Locator> delete = cartPage.getDeleteButtons();
         for (Locator d : delete) {
             cartPage.clickFirstDelete();
+            getPage().reload();
+            getPage().waitForTimeout(2000);
         }
 
         cartPage
