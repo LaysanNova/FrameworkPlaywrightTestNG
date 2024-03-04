@@ -114,13 +114,17 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
 
     @Step("Click 'Next' Button.")
     public HomePage clickNextButton() {
+
         nextButton.click();
+        getPage().waitForTimeout(1000);
 
         return this;
     }
     @Step("Click 'Previous' Button.")
     public HomePage clickPreviousButton() {
+
         previousButton.click();
+        getPage().waitForTimeout(1000);
 
         return this;
     }
