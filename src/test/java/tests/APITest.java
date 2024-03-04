@@ -1,16 +1,11 @@
 package tests;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
+import com.google.gson.*;
 import com.microsoft.playwright.Locator;
-import io.qameta.allure.Allure;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import jdk.jfr.Description;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.ProdPage;
 import tests.helpers.TestData;
