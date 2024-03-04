@@ -72,11 +72,8 @@
                         <allure.results.directory>target/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>-->
-<!--                            src/test/resources/testng-smoke.xml-->
-<!--                        </suiteXmlFile>-->
                         <suiteXmlFile>
-                            src/test/resources/home.xml
+                            src/test/resources/testng-smoke.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

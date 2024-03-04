@@ -4,11 +4,13 @@
 <suite name="Ecommerce store (smoke tests)">
     <test name="Smoke tests">
         <classes>
+            <class name="tests.HomeTest"/>
             <class name="tests.NavigationTest"/>
             <class name="tests.APITest"/>
             <class name="tests.CartTest"/>
             <class name="tests.ContactTest"/>
             <class name="tests.LoginTest"/>
+            <class name="tests.ProdTest"/>
         </classes>
     </test>
 </suite>
