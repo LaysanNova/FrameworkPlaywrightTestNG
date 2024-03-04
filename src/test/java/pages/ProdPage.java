@@ -3,7 +3,6 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import org.testng.Assert;
 import pages.model.HeadMenu;
 import tests.helpers.TestUtils;
 
