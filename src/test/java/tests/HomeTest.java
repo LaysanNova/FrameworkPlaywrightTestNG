@@ -99,52 +99,52 @@ public class HomeTest extends BaseTest implements IRandom {
 
     }
 
-//    @Test(
-//            testName = "TC.XXX.XX: Category Navigation - Verify Product Display matches to API",
-//            dataProvider = "category", dataProviderClass = TestData.class
-//    )
-//    @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
-//    @Severity(SeverityLevel.NORMAL)
-//    public void testProductDisplayByCategory(String category, String cat) {
-//
-//        HomePage homePage = new HomePage(getPage());
-//
-//        final List<Locator> productsByCat =
-//                homePage
-//                        .clickCategory(category)
-//                        .getProductsList();
-//
-//        final JsonArray phonesAPI = utils.api.APIUtils.getProductByCategory(cat);
-//
-//        int id = 0;
-//
-//        for (Locator product : productsByCat) {
-//
-//            Map<String, String> productData = TestUtils.getData(product);
-//
-//            Allure.step("Assert that price matches to backend.");
-//            Assert.assertEquals(
-//                    TestUtils.convertToDouble(productData.get("price")),
-//                    TestUtils.convertToDouble(phonesAPI.get(id).getAsJsonObject().get("price").getAsString()));
-//
-//            Allure.step("Assert that desc matches to backend.");
-//            Assert.assertEquals(
-//                    productData.get("desc"),
-//                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("desc")));
-//
-//            Allure.step("Assert that title matches to backend.");
-//            Assert.assertEquals(
-//                    productData.get("title"),
-//                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("title")));
-//
-//            Allure.step("Assert that img matches to backend.");
-//            Assert.assertEquals(
-//                    productData.get("img"),
-//                    phonesAPI.get(id).getAsJsonObject().get("img").getAsString());
-//
-//            id ++;
-//        }
-//    }
+    @Test(
+            testName = "TC.XXX.XX: Category Navigation - Verify Product Display matches to API",
+            dataProvider = "category", dataProviderClass = TestData.class
+    )
+    @Description("Objective: To verify the functionality of product display when navigating through categories by clicking.")
+    @Severity(SeverityLevel.NORMAL)
+    public void testProductDisplayByCategory(String category, String cat) {
+
+        HomePage homePage = new HomePage(getPage());
+
+        final List<Locator> productsByCat =
+                homePage
+                        .clickCategory(category)
+                        .getProductsList();
+
+        final JsonArray phonesAPI = utils.api.APIUtils.getProductByCategory(cat);
+
+        int id = 0;
+
+        for (Locator product : productsByCat) {
+
+            Map<String, String> productData = TestUtils.getData(product);
+
+            Allure.step("Assert that price matches to backend.");
+            Assert.assertEquals(
+                    TestUtils.convertToDouble(productData.get("price")),
+                    TestUtils.convertToDouble(phonesAPI.get(id).getAsJsonObject().get("price").getAsString()));
+
+            Allure.step("Assert that desc matches to backend.");
+            Assert.assertEquals(
+                    productData.get("desc"),
+                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("desc")));
+
+            Allure.step("Assert that title matches to backend.");
+            Assert.assertEquals(
+                    productData.get("title"),
+                    TestUtils.makeString(phonesAPI.get(id).getAsJsonObject().get("title")));
+
+            Allure.step("Assert that img matches to backend.");
+            Assert.assertEquals(
+                    productData.get("img"),
+                    phonesAPI.get(id).getAsJsonObject().get("img").getAsString());
+
+            id ++;
+        }
+    }
 
     @Test(testName = "TC.XXX.XX: Product Quantity Verification")
     @Description("Objective: Verify that the correct quantity of products is displayed on the webpage.")
