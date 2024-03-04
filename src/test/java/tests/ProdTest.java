@@ -10,6 +10,7 @@ import org.testng.annotations.*;
 import pages.HomePage;
 import pages.ProdPage;
 import tests.helpers.TestUtils;
+import utils.reports.LoggerUtils;
 
 import java.util.Map;
 
@@ -24,18 +25,24 @@ public class ProdTest extends BaseTest {
 
         HomePage homePage = new HomePage(getPage());
 
+        LoggerUtils.logInfo("randomProduct");
         final Locator randomProduct =
                 homePage
                         .clickRandomCategory()
                         .getRandomProduct();
 
+        LoggerUtils.logInfo("productData");
         final Map<String, String> productData = TestUtils.getData(randomProduct);
 
+        LoggerUtils.logInfo("prodPage");
         ProdPage prodPage =
                 homePage
                         .clickProductByLocator(randomProduct);
 
+        LoggerUtils.logInfo("image");
         final Locator image = prodPage.getImg();
+
+        LoggerUtils.logInfo("productBody");
         final Locator productBody = prodPage.getProductBody();
 
         Allure.step("Assert that image is visible.");
