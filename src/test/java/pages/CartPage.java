@@ -19,6 +19,7 @@ public class CartPage extends HeadMenu<CartPage> {
         super(page);
     }
 
+    @Step("Collecting products on page 'Cart'.")
     public List<Locator> getProductsList() {
 
         List<Locator> productList = new ArrayList<>();
@@ -51,6 +52,7 @@ public class CartPage extends HeadMenu<CartPage> {
         return this;
     }
 
+    @Step("Collecting buttons 'Delete' of products on page 'Cart'.")
     public List<Locator> getDeleteButtons() {
 
         List<Locator> productsList = allElements(".success");

@@ -2,6 +2,7 @@ package pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import pages.model.HeadMenu;
 import tests.helpers.TestData;
@@ -15,6 +16,7 @@ public class PreconditionPage extends HeadMenu<PreconditionPage>  {
         super(page);
     }
 
+    @Step("Precondition: Clean cart.")
     public void cleanCart() {
 
         final CartPage cartPage =
@@ -30,6 +32,7 @@ public class PreconditionPage extends HeadMenu<PreconditionPage>  {
                 .clickHomeMenu();
     }
 
+    @Step("Precondition: Add products to cart.")
     public void addProductsToCart() {
 
         HomePage homePage = new HomePage(getPage());
