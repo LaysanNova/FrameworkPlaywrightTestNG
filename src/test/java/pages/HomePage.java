@@ -11,8 +11,7 @@ import java.util.List;
 
 public class HomePage extends HeadMenu<HomePage> implements IRandom {
 
-    private final  List<Locator> allCategories = locator("#itemc").all();
-    private final Locator randomCategory = getRandomValue(allCategories);
+    private final  List<Locator> allCategories = locator("a#itemc").all();
     private final Locator phonesCategory = link("Phones");
     private final Locator laptopsCategory = link("Laptops");
     private final Locator monitorsCategory = link("Monitors");
@@ -61,6 +60,8 @@ public class HomePage extends HeadMenu<HomePage> implements IRandom {
 
     @Step("Click random Category.")
     public HomePage clickRandomCategory() {
+
+        Locator randomCategory = getRandomValue(allCategories);
         randomCategory.click();
 
         return this;

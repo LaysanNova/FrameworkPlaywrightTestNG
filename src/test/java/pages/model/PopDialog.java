@@ -13,6 +13,7 @@ public abstract class PopDialog<TPage> extends BaseLocator {
 
     @Step("Click 'OK' button")
     public TPage clickOk() {
+
         getPage().onDialog(Dialog::accept);
         getPage().waitForTimeout(2000);
 
