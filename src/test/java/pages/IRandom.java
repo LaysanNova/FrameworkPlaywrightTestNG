@@ -1,5 +1,8 @@
 package pages;
 
+import io.qameta.allure.Step;
+import utils.reports.LoggerUtils;
+
 import java.util.List;
 import java.util.Random;
 
