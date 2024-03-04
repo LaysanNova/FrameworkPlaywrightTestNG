@@ -165,6 +165,7 @@ public class HomeTest extends BaseTest implements IRandom {
 
         HomePage homePage = new HomePage(getPage());
 
+        LoggerUtils.logInfo("entryProducts");
         final List<Locator> entryProducts =
                 homePage
                         .getProductsList();
@@ -172,6 +173,7 @@ public class HomeTest extends BaseTest implements IRandom {
         Allure.step("Assert that quantity of products is according data.");
         Assert.assertEquals(entryProducts.size(), TestData.maxProductsOnPage);
 
+        LoggerUtils.logInfo("nextProducts");
         final List<Locator> nextProducts = homePage
                 .clickNextButton()
                 .getProductsList();
@@ -179,6 +181,7 @@ public class HomeTest extends BaseTest implements IRandom {
         Allure.step("Assert that quantity of next products is according data.");
         Assert.assertTrue(nextProducts.size() == TestData.maxProductsOnPage || nextProducts.size() < TestData.maxProductsOnPage);
 
+        LoggerUtils.logInfo("previousProducts");
         final List<Locator> previousProducts = homePage
                 .clickPreviousButton()
                 .getProductsList();
