@@ -23,7 +23,6 @@ public class CartPage extends HeadMenu<CartPage> {
     public List<Locator> getProductsList() {
 
         List<Locator> productList = new ArrayList<>();
-
         getPage().waitForLoadState();
         getPage().waitForTimeout(1000);
         Locator firstProduct = locator(".success").first();
@@ -60,11 +59,19 @@ public class CartPage extends HeadMenu<CartPage> {
     @Step("Collecting buttons 'Delete' of products on page 'Cart'.")
     public List<Locator> getDeleteButtons() {
 
-        List<Locator> productsList = allElements(".success");
+        List<Locator> productList = new ArrayList<>();
         List<Locator> deleteButtonsList = new ArrayList<>();
 
-        if (!productsList.isEmpty()) {
-            for (Locator product : productsList) {
+        getPage().waitForLoadState();
+        getPage().waitForTimeout(1000);
+        Locator firstProduct = locator(".success").first();
+
+        if (firstProduct.isVisible()) {
+            getPage().waitForTimeout(1000);
+            productList = allElements(".success");
+            getPage().waitForTimeout(1000);
+
+            for (Locator product : productList) {
                 deleteButtonsList.add(product.locator("a"));
             }
         }
