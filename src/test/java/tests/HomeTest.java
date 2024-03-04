@@ -48,7 +48,7 @@ public class HomeTest extends BaseTest implements IRandom {
     @Test(testName = "TC.XXX.XX: Seamless Purchase Journey Validation E2E")
     @Description("Objective: To validate the entire purchase process.")
     @Severity(SeverityLevel.CRITICAL)
-    public void testPurchaseWithCartValidationE2E() {
+    public void testE2EPurchaseWithCartValidation() {
 
         LoggerUtils.logInfo(LoggerInfo.stepInfo(new Object() {}, "precondition"));
 
