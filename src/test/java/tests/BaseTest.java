@@ -86,6 +86,8 @@ public abstract class BaseTest {
         ReportUtils.logTestStatistic(method, testResult);
         ReportUtils.addScreenshotToAllureReportForCIFailure(page,testResult);
 
+        LoginUtils.logout(page);
+
         if (page != null){
             page.close();
             logInfo("Page closed.");
