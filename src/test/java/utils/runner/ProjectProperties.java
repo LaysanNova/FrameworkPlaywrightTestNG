@@ -25,6 +25,13 @@ public final class ProjectProperties {
     public static final String E_PASSWORD = properties.getProperty("ePassword");
     public static final String TOKEN = properties.getProperty("token");
 
+
+    public static final String db_use = properties.getProperty("db_use");
+    public static final String db_name = properties.getProperty("db_name");
+    public static final String db_table_name = properties.getProperty("db_table_name");
+    public static final String db_user = properties.getProperty("db_user");
+    public static final String db_pass = properties.getProperty("db_pass");
+
     private static Properties init_properties() {
         if (properties == null) {
             properties = new Properties();
