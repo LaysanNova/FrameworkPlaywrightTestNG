@@ -42,5 +42,6 @@ config.properties
 # Allure Report
 allure-results/
 .allure/
+main
 
 README.md
