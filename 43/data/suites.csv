@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Mon Mar 04 00:29:33 GMT 2024","Mon Mar 04 00:29:33 GMT 2024","0","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testProductDisplayOnThePage","testProductDisplayOnThePage",""
-"failed","Mon Mar 04 00:29:30 GMT 2024","Mon Mar 04 00:29:32 GMT 2024","2310","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testProductDisplayByCategory","testProductDisplayByCategory",""
-"passed","Mon Mar 04 00:29:20 GMT 2024","Mon Mar 04 00:29:22 GMT 2024","2899","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testProductDisplayByCategory","testProductDisplayByCategory",""
-"skipped","Mon Mar 04 00:29:33 GMT 2024","Mon Mar 04 00:29:33 GMT 2024","0","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testPurchaseWithCartValidationE2E","testPurchaseWithCartValidationE2E",""
-"passed","Mon Mar 04 00:29:16 GMT 2024","Mon Mar 04 00:29:17 GMT 2024","706","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testLogOut","testLogOut",""
-"broken","Mon Mar 04 00:29:33 GMT 2024","Mon Mar 04 00:29:33 GMT 2024","1","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","closeContext","closeContext",""
-"passed","Mon Mar 04 00:29:25 GMT 2024","Mon Mar 04 00:29:27 GMT 2024","2261","Ecommerce store (home page tests)","Home tests","tests.HomeTest","tests.HomeTest","testProductDisplayByCategory","testProductDisplayByCategory",""
